@@ -10,7 +10,7 @@
 <link rel="icon" href="img/icono.png">
 <link rel="apple-touch-icon" href="img/icono.png">
 <link rel="preload" href="fuentes/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="img/logo.png" as="image">
+<link rel="preload" href="img/logo-frontal.png" as="image">
 <style>
 @font-face{font-family:"Archivo";font-style:normal;font-weight:300 700;font-stretch:62% 125%;font-display:swap;
   src:url(fuentes/archivo-latin-ext.woff2) format("woff2");
@@ -81,7 +81,7 @@ p{margin:0}
 .idioma:hover{border-color:#fff}
 
 /* Portada: la pintura bajo la luz de inspección */
-.portada{position:relative;overflow:hidden;color:#fff;--corte:50%;--gx:50%;--gy:50%;
+.portada{position:relative;overflow:hidden;color:#fff;--corte:50%;
   background:linear-gradient(180deg,var(--laca) 0%,var(--laca-2) 100%)}
 .portada canvas{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
 .portada .ancho{position:relative;z-index:2;display:grid;grid-template-columns:repeat(12,1fr);column-gap:24px;
@@ -95,9 +95,7 @@ p{margin:0}
 .portada .entradilla,.portada .acciones{opacity:0;transform:translateY(14px);transition:opacity .8s .5s,transform .8s .5s var(--suave)}
 .lista .portada .entradilla,.lista .portada .acciones{opacity:1;transform:none}
 .lista .portada .acciones{transition-delay:.62s}
-.logo{grid-column:8/13;justify-self:center;width:min(100%,480px);aspect-ratio:1340/1180;
-  background:radial-gradient(circle 300px at var(--gx) var(--gy),#fff 0%,#fff 35%,#CBD9EF 100%);
-  -webkit-mask:url(img/logo.png) center/contain no-repeat;mask:url(img/logo.png) center/contain no-repeat;
+.logo{grid-column:8/13;justify-self:center;width:min(100%,480px);height:auto;flex:none;
   opacity:0;transform:scale(.94);transition:opacity 1s .15s,transform 1.4s .15s var(--suave)}
 .lista .logo{opacity:1;transform:none}
 .corte{position:absolute;z-index:3;top:0;bottom:0;left:var(--corte);width:1px;background:rgba(255,255,255,.5)}
@@ -223,7 +221,7 @@ footer .ancho{display:flex;flex-wrap:wrap;gap:8px 32px;justify-content:space-bet
   .cabecera nav{display:none}
   .cabecera .ancho{height:60px}
   .portada .ancho{display:flex;flex-direction:column;align-items:stretch;min-height:100svh;padding-top:84px;padding-bottom:150px;justify-content:center}
-  .logo{order:-1;width:min(70vw,300px);align-self:center;margin-bottom:34px}
+  .logo{order:-1;width:min(70vw,300px);height:auto;align-self:center;margin-bottom:34px}
   .estado-pintura{bottom:26px;max-width:calc(50% - 44px)}
   .estado-pintura.antes{text-align:right}
   .asa{bottom:78px}
@@ -297,7 +295,7 @@ footer .ancho{display:flex;flex-wrap:wrap;gap:8px 32px;justify-content:space-bet
         <a class="enlace" href="tel:+34615836314">+34 615 836 314</a>
       </div>
     </div>
-    <div class="logo" role="img" aria-label="Pixel Car Spa"></div>
+    <img class="logo" src="img/logo-frontal.png" width="1340" height="1180" alt="Pixel Car Spa">
   </div>
   <div class="corte">
     <button class="asa" type="button" role="slider" aria-valuemin="5" aria-valuemax="95" aria-valuenow="50"
@@ -650,7 +648,7 @@ if("IntersectionObserver" in window&&!quieto){
 
 /* ---------- Portada: luz de inspección sobre la pintura ---------- */
 var lienzo=portada.querySelector("canvas"),ctx=lienzo.getContext("2d");
-var asa=portada.querySelector(".asa"),logo=portada.querySelector(".logo");
+var asa=portada.querySelector(".asa");
 var W=0,H=0,corte=.5,luz={x:.5,y:.4},sigueRaton=false,pendiente=false,arrastrando=false;
 
 /* Los microarañazos se ven como arcos alrededor del reflejo de la lámpara: se generan una vez. */
@@ -692,13 +690,6 @@ function dibujar(){
     ctx.beginPath();ctx.arc(x,y,a.r*esc,a.a,a.a+a.l);ctx.stroke();
   }
   ctx.restore();
-
-  /* El logotipo recoge el brillo de la lámpara */
-  var p=portada.getBoundingClientRect(),l=logo.getBoundingClientRect();
-  if(l.width){
-    logo.style.setProperty("--gx",((x-(l.left-p.left))/l.width*100).toFixed(1)+"%");
-    logo.style.setProperty("--gy",((y-(l.top-p.top))/l.height*100).toFixed(1)+"%");
-  }
 }
 function reposoY(){return window.innerWidth<=900?.22:.42}
 function fijarCorte(v){
