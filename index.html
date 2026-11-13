@@ -1,0 +1,534 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Pixel Car Spa. Detailing y protección cerámica en Jávea</title>
+<meta name="description" content="Lavado premium, detailing interior y exterior, protección cerámica, reparaciones menores y servicio de jet ski en Jávea. Cita por WhatsApp: +34 615 836 314.">
+<meta name="theme-color" content="#101B3F">
+<link rel="preload" href="fuentes/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:"Archivo";font-style:normal;font-weight:300 700;font-stretch:62% 125%;font-display:swap;
+  src:url(fuentes/archivo-latin-ext.woff2) format("woff2");
+  unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C4,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:"Archivo";font-style:normal;font-weight:300 700;font-stretch:62% 125%;font-display:swap;
+  src:url(fuentes/archivo-latin.woff2) format("woff2");
+  unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+
+:root{
+  --laca:#101B3F;      /* azul del rótulo: la pintura */
+  --laca-2:#0A1230;    /* azul en sombra */
+  --espuma:#F2F5F9;    /* fondo claro */
+  --blanco:#FFFFFF;
+  --agua:#CFE4F5;      /* banda del jet ski */
+  --reflejo:#8FC1EA;   /* luz de inspección: foco, filetes */
+  --tinta:#16204A;     /* texto sobre claro */
+  --gris:#4D5878;      /* texto secundario sobre claro */
+  --linea:#D3DBE8;
+  --margen:clamp(20px,5vw,72px);
+  --seccion:clamp(72px,10vw,144px);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;font-family:"Archivo",system-ui,sans-serif;font-size:17px;line-height:1.6;color:var(--tinta);background:var(--espuma)}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{font-stretch:125%;font-weight:500;margin:0;letter-spacing:-.012em}
+h1{font-size:clamp(38px,5.2vw,76px);line-height:1.02}
+h2{font-size:clamp(30px,3.9vw,54px);line-height:1.05}
+h3{font-size:clamp(21px,2vw,27px);line-height:1.2}
+p{margin:0}
+.ancho{max-width:1320px;margin:0 auto;padding:0 var(--margen)}
+:focus-visible{outline:3px solid var(--reflejo);outline-offset:3px}
+.oculto{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+
+/* Botones y enlaces */
+.boton{display:inline-flex;align-items:center;gap:10px;min-height:52px;padding:0 24px;border-radius:26px;border:0;
+  font:inherit;font-size:16px;font-weight:600;text-decoration:none;cursor:pointer;background:var(--laca);color:#fff}
+.boton:hover{background:var(--laca-2)}
+.boton svg{width:20px;height:20px;flex:none}
+.boton.claro{background:#fff;color:var(--laca)}
+.boton.claro:hover{background:var(--agua)}
+.enlace{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:5px}
+.enlace:hover{text-decoration-thickness:2px}
+
+/* Navegación */
+.nav{position:absolute;inset:0 0 auto 0;z-index:5;color:#fff}
+.nav .ancho{display:flex;align-items:center;gap:28px;height:76px}
+.marca{font-stretch:125%;font-weight:600;font-size:18px;letter-spacing:.02em;text-decoration:none;margin-right:auto}
+.nav nav{display:flex;gap:28px}
+.nav nav a{text-decoration:none;font-size:15px}
+.nav nav a:hover{text-decoration:underline;text-underline-offset:6px}
+.idioma{font:inherit;font-size:14px;font-weight:600;color:#fff;background:none;border:1px solid rgba(255,255,255,.45);
+  border-radius:18px;height:36px;padding:0 14px;cursor:pointer}
+.idioma:hover{border-color:#fff}
+
+/* Portada: la pintura bajo la luz de inspección */
+.portada{position:relative;overflow:hidden;color:#fff;--corte:50%;
+  background:linear-gradient(180deg,var(--laca) 0%,var(--laca-2) 100%)}
+.portada canvas{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.portada .ancho{position:relative;z-index:2;display:grid;grid-template-columns:repeat(12,1fr);column-gap:24px;
+  align-items:center;min-height:min(100svh,880px);padding-top:120px;padding-bottom:132px}
+.portada .texto{grid-column:1/7}
+.portada .entradilla{font-size:clamp(18px,1.5vw,21px);line-height:1.5;max-width:30em;margin-top:24px;color:#DCE6F7}
+.portada .acciones{display:flex;flex-wrap:wrap;align-items:center;gap:16px 28px;margin-top:36px}
+.portada .logo{grid-column:8/13;justify-self:center;width:min(100%,460px)}
+.corte{position:absolute;z-index:3;top:0;bottom:0;left:var(--corte);width:1px;background:rgba(255,255,255,.5)}
+.asa{position:absolute;left:50%;bottom:64px;transform:translateX(-50%);width:48px;height:48px;border-radius:50%;
+  border:1px solid #fff;background:rgba(16,27,63,.72);color:#fff;cursor:ew-resize;touch-action:none;padding:0;
+  display:grid;place-items:center}
+.asa svg{width:22px;height:22px}
+.estado-pintura{position:absolute;z-index:2;bottom:28px;font-size:14px;color:#C9D6EE;pointer-events:none}
+.estado-pintura.antes{right:calc(100% - var(--corte) + 44px)}
+.estado-pintura.despues{left:calc(var(--corte) + 44px)}
+
+/* Secciones */
+.seccion{padding:var(--seccion) 0}
+.rejilla{display:grid;grid-template-columns:repeat(12,1fr);column-gap:24px;row-gap:40px}
+.nota{color:var(--gris);font-size:17px;max-width:32em;margin-top:20px}
+
+/* Servicios */
+#servicios .titulo{grid-column:1/5}
+.servicios{grid-column:6/13;list-style:none;margin:0;padding:0;border-top:2px solid var(--laca)}
+.servicios li{display:grid;grid-template-columns:1fr auto;gap:8px 32px;align-items:start;padding:28px 0;border-bottom:1px solid var(--linea)}
+.servicios p{grid-column:1;color:var(--gris);max-width:34em}
+.servicios a{grid-column:2;grid-row:1/3;align-self:center;font-size:15px;font-weight:600;white-space:nowrap}
+
+/* Jet ski */
+#jetski{background:var(--agua);position:relative}
+#jetski .titulo{grid-column:1/8}
+#jetski .cuerpo{grid-column:8/13;align-self:end}
+#jetski .cuerpo p{max-width:30em}
+#jetski .boton{margin-top:28px}
+.ola{display:block;width:100%;height:28px;color:var(--agua);background:var(--espuma)}
+
+/* Cita */
+#cita .pasos{grid-column:1/6}
+.pasos ol{list-style:none;counter-reset:paso;margin:36px 0 0;padding:0}
+.pasos li{counter-increment:paso;display:grid;grid-template-columns:44px 1fr;padding:20px 0;border-top:1px solid var(--linea)}
+.pasos li::before{content:counter(paso);font-stretch:125%;font-weight:500;font-size:21px;font-variant-numeric:tabular-nums}
+.pasos li p{color:var(--gris)}
+.pasos li strong{display:block;color:var(--tinta);font-weight:600}
+.formulario{grid-column:7/13;background:var(--blanco);border-radius:6px;padding:clamp(24px,3vw,40px);align-self:start}
+.campo{margin-top:22px}
+.campo:first-of-type{margin-top:24px}
+.campo label{display:block;font-size:15px;font-weight:600;margin-bottom:8px}
+.campo .ayuda{font-weight:400;color:var(--gris)}
+.campo input,.campo select{width:100%;height:52px;padding:0 14px;font:inherit;color:var(--tinta);background:var(--espuma);
+  border:1px solid var(--linea);border-radius:4px}
+.campo input:focus,.campo select:focus{outline:3px solid var(--reflejo);outline-offset:1px;border-color:var(--laca)}
+.campo input[aria-invalid="true"]{border-color:#B3261E}
+.error{color:#B3261E;font-size:14px;margin-top:6px;min-height:0}
+.formulario .boton{margin-top:28px;width:100%;justify-content:center}
+.formulario .letra{font-size:13px;line-height:1.45;color:var(--gris);margin-top:14px}
+
+/* Horario y ubicación */
+#horario{background:var(--laca-2);color:#fff}
+#horario .col-a{grid-column:1/7}
+#horario .col-b{grid-column:8/13}
+.ahora{display:inline-flex;align-items:center;gap:10px;margin-top:22px;font-size:17px}
+.ahora i{width:10px;height:10px;border-radius:50%;background:#7C89AC;flex:none}
+.ahora.abierto i{background:#5FD38D}
+.horas{margin:32px 0 0;border-top:2px solid var(--reflejo)}
+.horas div{display:grid;grid-template-columns:1fr auto;gap:24px;padding:16px 0;border-bottom:1px solid rgba(255,255,255,.16)}
+.horas dt{color:#C9D6EE}
+.horas dd{margin:0;font-variant-numeric:tabular-nums;font-weight:500}
+.datos{list-style:none;margin:0;padding:0}
+.datos li{padding:22px 0;border-bottom:1px solid rgba(255,255,255,.16)}
+.datos li:first-child{padding-top:0}
+.datos span{display:block;font-size:14px;color:#C9D6EE;margin-bottom:4px}
+.datos .grande{font-stretch:112%;font-size:clamp(20px,1.9vw,25px);font-weight:500;line-height:1.3;font-variant-numeric:tabular-nums}
+
+/* Pie */
+footer{background:var(--laca-2);color:#C9D6EE;border-top:1px solid rgba(255,255,255,.16);font-size:14px}
+footer .ancho{display:flex;flex-wrap:wrap;gap:8px 32px;justify-content:space-between;padding-top:28px;padding-bottom:28px}
+
+@media (max-width:900px){
+  .nav nav{display:none}
+  .portada .ancho{display:block;min-height:0;padding-top:96px;padding-bottom:150px}
+  .portada .logo{width:min(64vw,270px);margin:0 auto 36px}
+  .portada .ancho{display:flex;flex-direction:column}
+  .portada .logo{order:-1}
+  .rejilla{display:block}
+  .rejilla>*+*{margin-top:40px}
+  .servicios li{grid-template-columns:1fr}
+  .servicios a{grid-column:1;grid-row:auto;margin-top:6px;justify-self:start}
+  .estado-pintura{bottom:24px;max-width:calc(50% - 40px)}
+  .estado-pintura.antes{text-align:right}
+  .asa{bottom:76px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="ancho">
+    <a class="marca" href="#inicio">Pixel Car Spa</a>
+    <nav aria-label="Secciones">
+      <a href="#servicios" data-t="nav1">Servicios</a>
+      <a href="#jetski" data-t="nav2">Jet ski</a>
+      <a href="#cita" data-t="nav3">Pedir cita</a>
+      <a href="#horario" data-t="nav4">Horario y ubicación</a>
+    </nav>
+    <button class="idioma" type="button" id="idioma" aria-label="Switch to English">English</button>
+  </div>
+</header>
+
+<main>
+<section class="portada" id="inicio">
+  <canvas aria-hidden="true"></canvas>
+  <div class="ancho">
+    <div class="texto">
+      <h1 data-t="h1">Detailing y protección cerámica en Jávea</h1>
+      <p class="entradilla" data-t="lead">Lavado premium, detailing interior y exterior, reparaciones menores y servicio de jet ski. Trabajamos con cita, para dedicarle a tu coche el tiempo que necesita.</p>
+      <div class="acciones">
+        <a class="boton claro" data-wa="general" href="https://wa.me/34615836314">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.500 8.500 0 0 1-12.600 7.400L3 20.500l1.700-5A8.500 8.500 0 1 1 21 11.500Z"/></svg>
+          <span data-t="cta">Pedir cita por WhatsApp</span>
+        </a>
+        <a class="enlace" href="tel:+34615836314">+34 615 836 314</a>
+      </div>
+    </div>
+    <img class="logo" src="img/logo.png" width="640" height="600" alt="Pixel Car Spa">
+  </div>
+  <div class="corte" aria-hidden="false">
+    <button class="asa" type="button" role="slider" aria-valuemin="5" aria-valuemax="95" aria-valuenow="50"
+      aria-label="Comparar la pintura sin corregir y corregida" data-t-aria="asa">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6 3 12l6 6M15 6l6 6-6 6"/></svg>
+    </button>
+  </div>
+  <p class="estado-pintura antes" data-t="antes">Pintura sin corregir</p>
+  <p class="estado-pintura despues" data-t="despues">Corregida y protegida</p>
+</section>
+
+<section class="seccion" id="servicios">
+  <div class="ancho rejilla">
+    <div class="titulo">
+      <h2 data-t="s_h2">Lo que hacemos con tu coche</h2>
+      <p class="nota" data-t="s_nota">Cada coche llega en un estado distinto. Mándanos unas fotos y te decimos qué le hace falta y cuánto cuesta, sin compromiso.</p>
+    </div>
+    <ul class="servicios">
+      <li>
+        <h3 data-t="s1">Lavado premium</h3>
+        <p data-t="s1p">Lavado cuidadoso de carrocería, llantas y cristales, con un secado que no deja marcas ni arañazos nuevos.</p>
+        <a class="enlace" data-wa="s1" data-t="preguntar" href="https://wa.me/34615836314">Preguntar por WhatsApp</a>
+      </li>
+      <li>
+        <h3 data-t="s2">Detailing exterior</h3>
+        <p data-t="s2p">Descontaminamos y pulimos la pintura para quitar los microarañazos y el velo que apagan el color.</p>
+        <a class="enlace" data-wa="s2" data-t="preguntar" href="https://wa.me/34615836314">Preguntar por WhatsApp</a>
+      </li>
+      <li>
+        <h3 data-t="s3">Detailing interior</h3>
+        <p data-t="s3p">Tapicería, cuero, alfombrillas, salpicadero y todos los rincones donde se acumula la arena de la playa.</p>
+        <a class="enlace" data-wa="s3" data-t="preguntar" href="https://wa.me/34615836314">Preguntar por WhatsApp</a>
+      </li>
+      <li>
+        <h3 data-t="s4">Protección cerámica</h3>
+        <p data-t="s4p">Una capa que protege la pintura del sol y del salitre de la costa. El agua resbala y el coche se ensucia menos.</p>
+        <a class="enlace" data-wa="s4" data-t="preguntar" href="https://wa.me/34615836314">Preguntar por WhatsApp</a>
+      </li>
+      <li>
+        <h3 data-t="s5">Reparaciones menores</h3>
+        <p data-t="s5p">Roces, arañazos y pequeños desperfectos. Enséñanos una foto y te decimos si tiene arreglo.</p>
+        <a class="enlace" data-wa="s5" data-t="preguntar" href="https://wa.me/34615836314">Preguntar por WhatsApp</a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<svg class="ola" viewBox="0 0 1440 28" preserveAspectRatio="none" aria-hidden="true"><path fill="currentColor" d="M0 28V14c120-12 240-12 360 0s240 12 360 0 240-12 360 0 240 12 360 0v14Z"/></svg>
+<section class="seccion" id="jetski">
+  <div class="ancho rejilla">
+    <div class="titulo">
+      <h2 data-t="j_h2">También cuidamos tu moto de agua</h2>
+    </div>
+    <div class="cuerpo">
+      <p data-t="j_p">El agua salada castiga más que la carretera. Tráenos tu jet ski y cuéntanos qué necesita: lo dejamos listo para la próxima salida desde el puerto de Jávea.</p>
+      <a class="boton" data-wa="jet" href="https://wa.me/34615836314" data-t="j_cta">Consultar servicio de jet ski</a>
+    </div>
+  </div>
+</section>
+
+<section class="seccion" id="cita">
+  <div class="ancho rejilla">
+    <div class="pasos">
+      <h2 data-t="c_h2">Pide tu cita en un minuto</h2>
+      <ol>
+        <li><p><strong data-t="p1">Cuéntanos qué coche tienes</strong><span data-t="p1p">Rellena el formulario y se abre WhatsApp con el mensaje ya escrito.</span></p></li>
+        <li><p><strong data-t="p2">Te damos precio y fecha</strong><span data-t="p2p">Te respondemos con el presupuesto y los días que tenemos libres.</span></p></li>
+        <li><p><strong data-t="p3">Nos traes el coche</strong><span data-t="p3p">Av. del Rei Juan Carlos I, 83. Te avisamos cuando esté listo.</span></p></li>
+      </ol>
+    </div>
+    <form class="formulario" id="form" novalidate>
+      <h3 data-t="f_h3">Tu cita</h3>
+      <div class="campo">
+        <label for="f-coche"><span data-t="f_coche">Vehículo</span> <span class="ayuda" data-t="f_coche_a">(marca, modelo y año)</span></label>
+        <input id="f-coche" name="coche" type="text" autocomplete="off" required aria-describedby="e-coche" placeholder="Seat León 2019">
+        <p class="error" id="e-coche" role="alert"></p>
+      </div>
+      <div class="campo">
+        <label for="f-servicio" data-t="f_serv">Servicio</label>
+        <select id="f-servicio" name="servicio">
+          <option value="s1" data-t="s1">Lavado premium</option>
+          <option value="s2" data-t="s2">Detailing exterior</option>
+          <option value="s3" data-t="s3">Detailing interior</option>
+          <option value="s4" data-t="s4">Protección cerámica</option>
+          <option value="s5" data-t="s5">Reparaciones menores</option>
+          <option value="jet" data-t="o_jet">Servicio de jet ski</option>
+          <option value="nose" data-t="o_nose">No lo sé, aconsejadme</option>
+        </select>
+      </div>
+      <div class="campo">
+        <label for="f-cuando"><span data-t="f_cuando">Cuándo te viene bien</span> <span class="ayuda" data-t="f_opc">(opcional)</span></label>
+        <input id="f-cuando" name="cuando" type="text" autocomplete="off" placeholder="El jueves por la mañana" data-t-ph="f_cuando_ph">
+      </div>
+      <button class="boton" type="submit" data-t="f_enviar">Abrir WhatsApp con mi mensaje</button>
+      <p class="letra" data-t="f_letra">No guardamos nada en esta web: el mensaje se envía desde tu WhatsApp y puedes cambiarlo antes de mandarlo.</p>
+    </form>
+  </div>
+</section>
+
+<section class="seccion" id="horario">
+  <div class="ancho rejilla">
+    <div class="col-a">
+      <h2 data-t="h_h2">Horario</h2>
+      <p class="ahora" id="ahora" aria-live="polite"><i></i><span></span></p>
+      <dl class="horas">
+        <div><dt data-t="h1d">Lunes a viernes</dt><dd>09:00 – 14:00</dd></div>
+        <div><dt data-t="h2d">Tardes</dt><dd data-t="cita_previa">Con cita previa</dd></div>
+        <div><dt data-t="h3d">Sábados y domingos</dt><dd data-t="cita_previa">Con cita previa</dd></div>
+      </dl>
+    </div>
+    <ul class="datos col-b">
+      <li><span data-t="d_dir">Dirección</span>
+        <p class="grande">Av. del Rei Juan Carlos I, 83<br>Jávea</p>
+        <a class="enlace" target="_blank" rel="noopener" data-t="d_llegar"
+          href="https://www.google.com/maps/search/?api=1&query=Pixel+Car+Spa%2C+Av.+del+Rei+Juan+Carlos+I+83%2C+J%C3%A1vea">Cómo llegar con Google Maps</a></li>
+      <li><span>WhatsApp</span>
+        <a class="grande enlace" data-wa="general" href="https://wa.me/34615836314">+34 615 836 314</a></li>
+      <li><span>Instagram</span>
+        <a class="grande enlace" target="_blank" rel="noopener" href="https://www.instagram.com/pixel.carspa/">@pixel.carspa</a></li>
+    </ul>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="ancho">
+    <p>Pixel Car Spa. Av. del Rei Juan Carlos I, 83, Jávea</p>
+    <p data-t="pie">Propuesta de web, no oficial</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+"use strict";
+var TEL="34615836314";
+
+/* ---------- Idioma ---------- */
+var EN={
+ nav1:"Services",nav2:"Jet ski",nav3:"Book",nav4:"Hours and location",
+ h1:"Car detailing and ceramic protection in Jávea",
+ lead:"Premium wash, interior and exterior detailing, minor repairs and jet ski service. We work by appointment, so your car gets the time it needs.",
+ cta:"Book on WhatsApp",
+ asa:"Compare uncorrected and corrected paint",
+ antes:"Uncorrected paint",despues:"Corrected and protected",
+ s_h2:"What we do for your car",
+ s_nota:"Every car arrives in a different state. Send us a few photos and we will tell you what it needs and what it costs, no obligation.",
+ s1:"Premium wash",s1p:"A careful wash of bodywork, wheels and glass, dried so it leaves no marks and no new scratches.",
+ s2:"Exterior detailing",s2p:"We decontaminate and polish the paint to remove the fine scratches and haze that dull the colour.",
+ s3:"Interior detailing",s3p:"Upholstery, leather, mats, dashboard and every corner where beach sand ends up.",
+ s4:"Ceramic protection",s4p:"A coating that shields the paint from the sun and the salt air of the coast. Water runs off and the car stays clean for longer.",
+ s5:"Minor repairs",s5p:"Scuffs, scratches and small damage. Show us a photo and we will tell you if it can be fixed.",
+ preguntar:"Ask on WhatsApp",
+ j_h2:"We look after your jet ski too",
+ j_p:"Salt water is harder on a machine than any road. Bring us your jet ski and tell us what it needs: we will have it ready for your next trip out of Jávea port.",
+ j_cta:"Ask about jet ski service",
+ c_h2:"Book in one minute",
+ p1:"Tell us about your car",p1p:"Fill in the form and WhatsApp opens with the message already written.",
+ p2:"We send you a price and a date",p2p:"We reply with a quote and the days we have free.",
+ p3:"You bring the car in",p3p:"Av. del Rei Juan Carlos I, 83. We let you know when it is ready.",
+ f_h3:"Your booking",f_coche:"Vehicle",f_coche_a:"(make, model and year)",f_serv:"Service",
+ o_jet:"Jet ski service",o_nose:"Not sure, please advise",
+ f_cuando:"When suits you",f_opc:"(optional)",f_cuando_ph:"Thursday morning",
+ f_enviar:"Open WhatsApp with my message",
+ f_letra:"This website stores nothing: the message is sent from your own WhatsApp and you can edit it before sending.",
+ h_h2:"Opening hours",h1d:"Monday to Friday",h2d:"Afternoons",h3d:"Saturdays and Sundays",cita_previa:"By appointment",
+ d_dir:"Address",d_llegar:"Directions on Google Maps",
+ pie:"Website proposal, not official"
+};
+var ES={},lang="es";
+var nodos=document.querySelectorAll("[data-t]");
+nodos.forEach(function(n){ES[n.dataset.t]=n.textContent});
+ES.asa=document.querySelector(".asa").getAttribute("aria-label");
+ES.f_cuando_ph=document.getElementById("f-cuando").placeholder;
+var META={
+ es:[document.title,document.querySelector('meta[name=description]').content],
+ en:["Pixel Car Spa. Car detailing and ceramic protection in Jávea","Premium wash, interior and exterior detailing, ceramic protection, minor repairs and jet ski service in Jávea. Book on WhatsApp: +34 615 836 314."]
+};
+var MSG={
+ es:{general:"Hola, quería pedir cita en Pixel Car Spa.",serv:"Hola, quería información sobre: ",
+     cita:"Hola, quería pedir cita en Pixel Car Spa.",coche:"Vehículo: ",servicio:"Servicio: ",cuando:"Me viene bien: ",
+     falta:"Escribe la marca y el modelo para poder darte precio.",
+     abierto:"Abierto ahora, hasta las 14:00",cerrado:"Ahora atendemos con cita previa"},
+ en:{general:"Hello, I would like to book at Pixel Car Spa.",serv:"Hello, I would like information about: ",
+     cita:"Hello, I would like to book at Pixel Car Spa.",coche:"Vehicle: ",servicio:"Service: ",cuando:"Best time for me: ",
+     falta:"Enter the make and model so we can give you a price.",
+     abierto:"Open now, until 14:00",cerrado:"Right now we work by appointment"}
+};
+function t(k){return (lang==="en"?EN:ES)[k]}
+function wa(texto){return "https://wa.me/"+TEL+"?text="+encodeURIComponent(texto)}
+function nombreServicio(k){return k==="jet"?t("o_jet"):t(k)}
+
+function aplicarIdioma(){
+  document.documentElement.lang=lang;
+  nodos.forEach(function(n){n.textContent=t(n.dataset.t)});
+  document.querySelector(".asa").setAttribute("aria-label",t("asa"));
+  document.getElementById("f-cuando").placeholder=t("f_cuando_ph");
+  document.title=META[lang][0];
+  document.querySelector('meta[name=description]').content=META[lang][1];
+  var b=document.getElementById("idioma");
+  b.textContent=lang==="es"?"English":"Español";
+  b.setAttribute("aria-label",lang==="es"?"Switch to English":"Cambiar a español");
+  document.querySelectorAll("[data-wa]").forEach(function(a){
+    var k=a.dataset.wa;
+    a.href=wa(k==="general"?MSG[lang].general:MSG[lang].serv+nombreServicio(k)+".");
+  });
+  document.getElementById("e-coche").textContent="";
+  document.getElementById("f-coche").removeAttribute("aria-invalid");
+  pintarAhora();
+}
+document.getElementById("idioma").addEventListener("click",function(){lang=lang==="es"?"en":"es";aplicarIdioma()});
+
+/* ---------- Abierto ahora (hora de Jávea) ---------- */
+function pintarAhora(){
+  var abierto=false;
+  try{
+    var p=new Intl.DateTimeFormat("en-GB",{timeZone:"Europe/Madrid",weekday:"short",hour:"2-digit",hour12:false}).formatToParts(new Date());
+    var dia="",hora=0;
+    p.forEach(function(x){if(x.type==="weekday")dia=x.value;if(x.type==="hour")hora=parseInt(x.value,10)});
+    abierto=["Mon","Tue","Wed","Thu","Fri"].indexOf(dia)>=0&&hora>=9&&hora<14;
+  }catch(e){}
+  var el=document.getElementById("ahora");
+  el.classList.toggle("abierto",abierto);
+  el.querySelector("span").textContent=MSG[lang][abierto?"abierto":"cerrado"];
+}
+setInterval(pintarAhora,60000);
+
+/* ---------- Formulario → WhatsApp ---------- */
+var form=document.getElementById("form"),coche=document.getElementById("f-coche"),err=document.getElementById("e-coche");
+form.addEventListener("submit",function(e){
+  e.preventDefault();
+  var v=coche.value.trim();
+  if(v.length<2){
+    err.textContent=MSG[lang].falta;coche.setAttribute("aria-invalid","true");coche.focus();return;
+  }
+  var m=MSG[lang],sel=document.getElementById("f-servicio"),cuando=document.getElementById("f-cuando").value.trim();
+  var lineas=[m.cita,m.coche+v,m.servicio+sel.options[sel.selectedIndex].textContent];
+  if(cuando)lineas.push(m.cuando+cuando);
+  window.open(wa(lineas.join("\n")),"_blank","noopener");
+});
+coche.addEventListener("input",function(){err.textContent="";coche.removeAttribute("aria-invalid")});
+
+/* ---------- Portada: luz de inspección sobre la pintura ---------- */
+var portada=document.querySelector(".portada"),lienzo=portada.querySelector("canvas"),ctx=lienzo.getContext("2d");
+var asa=portada.querySelector(".asa");
+var W=0,H=0,corte=.5,luz={x:.5,y:.4},sigueRaton=false,pendiente=false;
+var quieto=window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+/* Los microarañazos se ven como arcos alrededor del reflejo de la lámpara: se generan una vez. */
+var arcos=[],semilla=7;
+function azar(){semilla=(semilla*16807)%2147483647;return semilla/2147483647}
+for(var i=0;i<520;i++){
+  var r=14+Math.pow(azar(),.8)*430;
+  arcos.push({r:r,a:azar()*Math.PI*2,l:.12+azar()*.6,g:.5+azar()*.7,o:.25+azar()*.75});
+}
+function medir(){
+  var d=Math.min(window.devicePixelRatio||1,2),c=portada.getBoundingClientRect();
+  W=c.width;H=c.height;lienzo.width=Math.round(W*d);lienzo.height=Math.round(H*d);
+  ctx.setTransform(d,0,0,d,0,0);pedir();
+}
+function pedir(){if(!pendiente){pendiente=true;requestAnimationFrame(dibujar)}}
+function dibujar(){
+  pendiente=false;
+  var x=luz.x*W,y=luz.y*H,cx=corte*W,g;
+  var esc=Math.max(.62,Math.min(1,W/1100));
+  ctx.clearRect(0,0,W,H);
+
+  /* Corregida: reflejo limpio y definido */
+  ctx.save();ctx.beginPath();ctx.rect(cx,0,W-cx,H);ctx.clip();
+  g=ctx.createRadialGradient(x,y,0,x,y,440*esc);
+  g.addColorStop(0,"rgba(236,244,255,.78)");g.addColorStop(.07,"rgba(214,230,255,.5)");
+  g.addColorStop(.11,"rgba(143,193,234,.2)");g.addColorStop(.45,"rgba(90,130,220,.07)");g.addColorStop(1,"rgba(90,130,220,0)");
+  ctx.fillStyle=g;ctx.fillRect(cx,0,W-cx,H);ctx.restore();
+
+  /* Sin corregir: velo apagado y remolinos alrededor de la luz */
+  ctx.save();ctx.beginPath();ctx.rect(0,0,cx,H);ctx.clip();
+  ctx.fillStyle="rgba(190,205,235,.035)";ctx.fillRect(0,0,cx,H);
+  g=ctx.createRadialGradient(x,y,0,x,y,520*esc);
+  g.addColorStop(0,"rgba(205,218,242,.36)");g.addColorStop(.3,"rgba(160,182,228,.15)");g.addColorStop(1,"rgba(160,182,228,0)");
+  ctx.fillStyle=g;ctx.fillRect(0,0,cx,H);
+  ctx.lineCap="round";
+  for(var i=0;i<arcos.length;i++){
+    var a=arcos[i],r=a.r*esc,f=1-a.r/450;
+    ctx.strokeStyle="rgba(228,238,255,"+(.42*a.o*f*f).toFixed(3)+")";
+    ctx.lineWidth=a.g;
+    ctx.beginPath();ctx.arc(x,y,r,a.a,a.a+a.l);ctx.stroke();
+  }
+  ctx.restore();
+}
+function fijarCorte(v){
+  corte=Math.max(.05,Math.min(.95,v));
+  portada.style.setProperty("--corte",(corte*100).toFixed(2)+"%");
+  asa.setAttribute("aria-valuenow",Math.round(corte*100));
+  if(!sigueRaton)luz.x=corte;
+  pedir();
+}
+portada.addEventListener("pointermove",function(e){
+  if(e.pointerType!=="mouse"||arrastrando)return;
+  var c=portada.getBoundingClientRect();
+  sigueRaton=true;luz.x=(e.clientX-c.left)/c.width;luz.y=(e.clientY-c.top)/c.height;pedir();
+});
+portada.addEventListener("pointerleave",function(e){
+  if(e.pointerType!=="mouse")return;
+  sigueRaton=false;luz.x=corte;luz.y=reposoY();pedir();
+});
+var arrastrando=false;
+asa.addEventListener("pointerdown",function(e){arrastrando=true;sigueRaton=false;asa.setPointerCapture(e.pointerId);e.preventDefault()});
+asa.addEventListener("pointermove",function(e){
+  if(!arrastrando)return;
+  var c=portada.getBoundingClientRect();luz.y=reposoY();fijarCorte((e.clientX-c.left)/c.width);
+});
+function soltar(){arrastrando=false}
+asa.addEventListener("pointerup",soltar);asa.addEventListener("pointercancel",soltar);
+asa.addEventListener("keydown",function(e){
+  var paso=e.key==="ArrowLeft"?-.04:e.key==="ArrowRight"?.04:e.key==="Home"?-1:e.key==="End"?1:0;
+  if(!paso)return;
+  e.preventDefault();sigueRaton=false;luz.y=reposoY();fijarCorte(corte+paso);
+});
+function reposoY(){return window.innerWidth<=900?.2:.42}
+
+/* Único movimiento al cargar: la lámpara entra desde la izquierda y se detiene en el corte */
+function entrada(){
+  var t0=performance.now(),dur=1700;
+  (function paso(ahora){
+    if(sigueRaton||arrastrando)return;
+    var k=Math.min(1,(ahora-t0)/dur),s=1-Math.pow(1-k,3);
+    luz.x=-.1+(corte+.1)*s;pedir();
+    if(k<1)requestAnimationFrame(paso);
+  })(t0);
+}
+window.addEventListener("resize",medir);
+luz.y=reposoY();
+if(/^en\b/i.test(navigator.language||""))lang="en";
+aplicarIdioma();
+medir();
+if(document.fonts&&document.fonts.ready)document.fonts.ready.then(medir);
+if(!quieto){luz.x=-.1;entrada()}
+})();
+</script>
+</body>
+</html>
