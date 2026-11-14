@@ -4,13 +4,35 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="robots" content="noindex, nofollow">
-<title>Pixel Car Spa. Detailing y protección cerámica en Jávea</title>
+<title>Pixel Car Spa | Detailing y protección cerámica en Jávea</title>
 <meta name="description" content="Lavado premium, detailing interior y exterior, protección cerámica, reparaciones menores y servicio de jet ski en Jávea. Cita por WhatsApp: +34 615 836 314.">
-<meta name="theme-color" content="#101B3F">
-<link rel="icon" href="img/icono.png">
-<link rel="apple-touch-icon" href="img/icono.png">
+<meta name="theme-color" content="#0A1230">
+<meta name="format-detection" content="telephone=no">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Pixel Car Spa">
+<meta property="og:title" content="Pixel Car Spa | Detailing y protección cerámica en Jávea">
+<meta property="og:description" content="Lavado premium, detailing, protección cerámica y servicio de jet ski. Cita por WhatsApp.">
+<meta property="og:image" content="img/compartir.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="es_ES">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="img/icono-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="img/icono-192.png" sizes="192x192" type="image/png">
+<link rel="apple-touch-icon" href="img/icono-180.png">
+<link rel="manifest" href="app.webmanifest">
 <link rel="preload" href="fuentes/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="img/logo-frontal.png" as="image">
+<link rel="preload" as="image" type="image/webp" media="(max-width:900px)" imagesrcset="img/gotas-v-720.webp 720w, img/gotas-v-1080.webp 1080w" imagesizes="100vw">
+<link rel="preload" as="image" type="image/webp" media="(min-width:901px)" imagesrcset="img/gotas-h-1600.webp 1600w, img/gotas-h-2400.webp 2400w" imagesizes="100vw">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"AutomotiveBusiness","name":"Pixel Car Spa",
+ "description":"Detailing, protección cerámica, lavado premium, reparaciones menores y servicio de jet ski en Jávea.",
+ "telephone":"+34615836314","image":"img/compartir.jpg",
+ "address":{"@type":"PostalAddress","streetAddress":"Av. del Rei Juan Carlos I, 83","addressLocality":"Jávea","postalCode":"03730","addressRegion":"Alicante","addressCountry":"ES"},
+ "geo":{"@type":"GeoCoordinates","latitude":38.7927,"longitude":0.1710},
+ "openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"09:00","closes":"14:00"}],
+ "sameAs":["https://www.instagram.com/pixel.carspa/"]}
+</script>
 <style>
 @font-face{font-family:"Archivo";font-style:normal;font-weight:300 700;font-stretch:62% 125%;font-display:swap;
   src:url(fuentes/archivo-latin-ext.woff2) format("woff2");
@@ -20,115 +42,131 @@
   unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
 
 :root{
-  --laca:#101B3F;      /* azul del rótulo: la pintura */
+  --laca:#101B3F;      /* azul del rótulo */
   --laca-2:#0A1230;    /* azul en sombra */
-  --espuma:#F2F5F9;    /* fondo claro */
+  --espuma:#F3F6FA;    /* fondo claro */
   --blanco:#FFFFFF;
-  --agua:#CFE4F5;      /* azul del agua */
-  --reflejo:#8FC1EA;   /* luz de inspección: foco, filetes */
-  --tinta:#16204A;
-  --gris:#4D5878;
+  --agua:#D5E6F6;      /* azul del agua */
+  --reflejo:#8FC1EA;   /* luz sobre la pintura: foco, filetes, detalles */
+  --tinta:#121A3C;
+  --gris:#4A5576;
+  --gris-claro:#C4D1EA; /* texto secundario sobre azul */
   --linea:#D3DBE8;
+  --linea-oscura:rgba(255,255,255,.16);
   --margen:clamp(20px,5vw,72px);
-  --seccion:clamp(80px,11vw,168px);
+  --seccion:clamp(84px,11vw,168px);
   --suave:cubic-bezier(.2,.7,.1,1);
+  --radio:14px;
 }
-*{box-sizing:border-box}
-html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-body{margin:0;font-family:"Archivo",system-ui,sans-serif;font-size:17px;line-height:1.6;color:var(--tinta);background:var(--espuma);
-  -webkit-font-smoothing:antialiased}
-img{max-width:100%;display:block}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{margin:0;font-family:"Archivo",system-ui,-apple-system,"Segoe UI",sans-serif;font-size:17px;line-height:1.6;color:var(--tinta);
+  background:var(--espuma);-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;-webkit-tap-highlight-color:transparent}
+img,picture,canvas,svg{display:block}
+img{max-width:100%;height:auto}
 a{color:inherit}
-h1,h2,h3{font-stretch:125%;font-weight:500;margin:0;letter-spacing:-.015em}
-h1{font-size:clamp(40px,5.6vw,84px);line-height:1}
-h2{font-size:clamp(34px,5vw,76px);line-height:1}
-h3{font-size:clamp(23px,2.5vw,36px);line-height:1.12}
+h1,h2,h3{font-stretch:125%;font-weight:500;margin:0;letter-spacing:-.015em;text-wrap:balance}
+h1{font-size:clamp(38px,5.4vw,82px);line-height:1}
+h2{font-size:clamp(33px,4.8vw,72px);line-height:1.02}
+h3{font-size:clamp(23px,2.4vw,34px);line-height:1.12}
 p{margin:0}
 ::selection{background:var(--reflejo);color:var(--laca-2)}
+[id]{scroll-margin-top:84px}
 .ancho{max-width:1320px;margin:0 auto;padding:0 var(--margen)}
-:focus-visible{outline:3px solid var(--reflejo);outline-offset:3px}
+:focus-visible{outline:3px solid var(--reflejo);outline-offset:3px;border-radius:4px}
 .chispa{width:1em;height:1em;flex:none;fill:currentColor}
+.saltar{position:absolute;left:12px;top:-60px;z-index:50;background:#fff;color:var(--laca);padding:10px 16px;border-radius:8px;font-weight:600}
+.saltar:focus{top:12px}
 
 /* Botones y enlaces */
 .boton{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:0 26px;border-radius:27px;border:0;
-  font:inherit;font-size:16px;font-weight:600;text-decoration:none;cursor:pointer;background:var(--laca);color:#fff;
-  transition:background .2s,transform .2s var(--suave)}
-.boton:hover{background:var(--laca-2)}
+  font:inherit;font-size:16px;font-weight:600;line-height:1.2;text-decoration:none;cursor:pointer;background:var(--laca);color:#fff;
+  transition:background .2s,color .2s,transform .2s var(--suave)}
 .boton:active{transform:scale(.97)}
 .boton svg{width:20px;height:20px;flex:none}
 .boton.claro{background:#fff;color:var(--laca)}
-.boton.claro:hover{background:var(--agua)}
+.boton.linea{background:transparent;color:#fff;box-shadow:inset 0 0 0 1px rgba(255,255,255,.55)}
+.boton.pequeno{min-height:40px;padding:0 18px;font-size:14px;border-radius:20px}
 .enlace{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:5px}
-.enlace:hover{text-decoration-thickness:2px}
+@media (hover:hover){
+  .boton:hover{background:var(--laca-2)}
+  .boton.claro:hover{background:var(--agua)}
+  .boton.linea:hover{background:rgba(255,255,255,.12)}
+  .enlace:hover{text-decoration-thickness:2px}
+}
 
 /* Titulares que entran al llegar a ellos */
 .entra{clip-path:inset(0 0 100% 0);transform:translateY(.35em);transition:clip-path .9s var(--suave),transform .9s var(--suave)}
-.entra.visto{clip-path:inset(-.1em 0 -.2em 0);transform:none}
+.entra.visto{clip-path:inset(-.15em -.1em -.25em -.1em);transform:none}
 
 /* Cabecera */
 .cabecera{position:fixed;inset:0 0 auto 0;z-index:20;color:#fff;transition:transform .35s var(--suave),background .25s}
-.cabecera.solida{background:rgba(10,18,48,.88);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
+.cabecera.solida{background:rgba(10,18,48,.86);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px)}
 .cabecera.fuera{transform:translateY(-100%)}
-.cabecera .ancho{display:flex;align-items:center;gap:28px;height:68px}
-.marca{font-stretch:125%;font-weight:600;font-size:17px;letter-spacing:.02em;text-decoration:none;margin-right:auto}
+.cabecera .ancho{display:flex;align-items:center;gap:26px;height:72px}
+.marca{display:inline-flex;align-items:center;gap:10px;font-stretch:125%;font-weight:600;font-size:17px;letter-spacing:.02em;text-decoration:none;margin-right:auto;white-space:nowrap}
+.marca .chispa{width:15px;height:15px;color:var(--reflejo)}
 .cabecera nav{display:flex;gap:28px}
-.cabecera nav a{text-decoration:none;font-size:15px;position:relative;padding:6px 0}
+.cabecera nav a{text-decoration:none;font-size:15px;position:relative;padding:6px 0;white-space:nowrap}
 .cabecera nav a::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:currentColor;transform:scaleX(0);
   transform-origin:left;transition:transform .3s var(--suave)}
-.cabecera nav a:hover::after{transform:scaleX(1)}
+@media (hover:hover){.cabecera nav a:hover::after{transform:scaleX(1)}}
 .idioma{font:inherit;font-size:14px;font-weight:600;color:#fff;background:none;border:1px solid rgba(255,255,255,.45);
-  border-radius:18px;height:36px;padding:0 14px;cursor:pointer}
-.idioma:hover{border-color:#fff}
+  border-radius:20px;height:40px;padding:0 16px;cursor:pointer;white-space:nowrap}
+@media (hover:hover){.idioma:hover{border-color:#fff}}
 
-/* Portada: la pintura bajo la luz de inspección */
-.portada{position:relative;overflow:hidden;color:#fff;--corte:50%;
-  background:linear-gradient(180deg,var(--laca) 0%,var(--laca-2) 100%)}
-.portada canvas{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
-.portada .ancho{position:relative;z-index:2;display:grid;grid-template-columns:repeat(12,1fr);column-gap:24px;
-  align-items:center;min-height:min(100svh,900px);padding-top:110px;padding-bottom:140px}
-.portada .texto{grid-column:1/7}
-.portada h1 .p{display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.14em;margin-bottom:-.14em}
-.portada h1 .p i{display:inline-block;font-style:normal;transform:translateY(115%);transition:transform 1s var(--suave)}
-.lista .portada h1 .p i{transform:none}
-.portada .entradilla{font-size:clamp(18px,1.5vw,21px);line-height:1.5;max-width:30em;margin-top:26px;color:#DCE6F7}
-.portada .acciones{display:flex;flex-wrap:wrap;align-items:center;gap:16px 28px;margin-top:36px}
-.portada .entradilla,.portada .acciones{opacity:0;transform:translateY(14px);transition:opacity .8s .5s,transform .8s .5s var(--suave)}
-.lista .portada .entradilla,.lista .portada .acciones{opacity:1;transform:none}
-.lista .portada .acciones{transition-delay:.62s}
-.logo{grid-column:8/13;justify-self:center;width:min(100%,480px);height:auto;flex:none;
-  opacity:0;transform:scale(.94);transition:opacity 1s .15s,transform 1.4s .15s var(--suave)}
+/* Portada */
+.portada{position:relative;isolation:isolate;overflow:hidden;color:#fff;background:var(--laca-2)}
+.portada .fondo{position:absolute;inset:0;z-index:-2}
+.portada .fondo img{width:100%;height:100%;object-fit:cover;object-position:50% 100%;transform:scale(1.07);transition:transform 2.8s var(--suave)}
+.lista .portada .fondo img{transform:none}
+.portada::after{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:
+  radial-gradient(ellipse 62% 52% at 50% 44%,rgba(10,18,48,.88) 0%,rgba(10,18,48,.6) 50%,rgba(10,18,48,0) 100%),
+  linear-gradient(180deg,rgba(10,18,48,.92) 0%,rgba(10,18,48,.35) 26%,rgba(10,18,48,0) 55%)}
+.portada .ancho{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;
+  min-height:100vh;min-height:100svh;padding-top:96px;padding-bottom:clamp(110px,18vh,200px)}
+.logo{width:clamp(210px,24vw,340px);opacity:0;transform:translateY(10px) scale(.96);transition:opacity 1s .1s,transform 1.4s .1s var(--suave)}
 .lista .logo{opacity:1;transform:none}
-.corte{position:absolute;z-index:3;top:0;bottom:0;left:var(--corte);width:1px;background:rgba(255,255,255,.5)}
-.asa{position:absolute;left:50%;bottom:66px;transform:translateX(-50%);width:52px;height:52px;border-radius:50%;
-  border:1px solid #fff;background:rgba(16,27,63,.72);color:#fff;cursor:ew-resize;touch-action:none;padding:0;
-  display:grid;place-items:center}
-.asa svg{width:22px;height:22px}
-.estado-pintura{position:absolute;z-index:2;bottom:30px;font-size:14px;color:#C9D6EE;pointer-events:none}
-.estado-pintura.antes{right:calc(100% - var(--corte) + 44px)}
-.estado-pintura.despues{left:calc(var(--corte) + 44px)}
+.portada h1{max-width:15em;margin-top:clamp(22px,3vw,40px)}
+.portada h1 .p{display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.16em;margin-bottom:-.16em}
+.portada h1 .p i{display:inline-block;font-style:normal;transform:translateY(118%);transition:transform 1s var(--suave)}
+.lista .portada h1 .p i{transform:none}
+.entradilla{font-size:clamp(17px,1.45vw,20px);line-height:1.5;max-width:36em;text-wrap:balance;margin-top:22px;color:#E3EBF9}
+.acciones{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:14px;margin-top:32px}
+.ahora{display:inline-flex;align-items:center;gap:10px;font-size:15px}
+.ahora i{width:9px;height:9px;border-radius:50%;background:#8E9BBD;flex:none}
+.ahora.abierto i{background:#5FD38D;box-shadow:0 0 0 0 rgba(95,211,141,.6);animation:pulso 2.2s infinite}
+@keyframes pulso{to{box-shadow:0 0 0 10px rgba(95,211,141,0)}}
+.portada .ahora{margin-top:24px;color:#fff;background:rgba(10,18,48,.6);padding:7px 14px 7px 12px;border-radius:18px;-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
+.entradilla,.acciones,.portada .ahora{opacity:0;transform:translateY(14px);transition:opacity .8s .55s,transform .8s .55s var(--suave)}
+.lista .entradilla,.lista .acciones,.lista .portada .ahora{opacity:1;transform:none}
+.lista .acciones{transition-delay:.66s}
+.lista .portada .ahora{transition-delay:.78s}
 
 /* Cinta con el lema del rótulo */
-.cinta{overflow:hidden;background:var(--espuma);padding:clamp(28px,4vw,56px) 0 0;white-space:nowrap}
-.cinta div{display:inline-flex;animation:cinta 36s linear infinite}
+.cinta{overflow:hidden;background:var(--espuma);padding:clamp(30px,4vw,60px) 0 0;white-space:nowrap}
+.cinta div{display:inline-flex;animation:cinta 38s linear infinite;will-change:transform}
 .cinta span{display:inline-flex;align-items:center;gap:.45em;padding-right:.45em;font-stretch:125%;font-weight:600;
-  font-size:clamp(44px,8vw,120px);line-height:1.1;letter-spacing:-.02em;color:var(--laca)}
-.cinta span:nth-child(even){color:transparent;-webkit-text-stroke:1.5px var(--laca)}
-.cinta .chispa{width:.42em;height:.42em;color:var(--laca)}
+  font-size:clamp(42px,7.6vw,116px);line-height:1.1;letter-spacing:-.02em;color:var(--laca)}
+.cinta span:nth-child(even){color:var(--espuma);-webkit-text-stroke:3px var(--laca);paint-order:stroke fill}
+.cinta .chispa{width:.4em;height:.4em;color:var(--laca)}
 @keyframes cinta{to{transform:translateX(-50%)}}
 
 /* Secciones */
 .seccion{padding:var(--seccion) 0}
+.oscura{background:var(--laca);color:#fff}
 .rejilla{display:grid;grid-template-columns:repeat(12,1fr);column-gap:24px;row-gap:40px}
 .nota{color:var(--gris);max-width:30em;margin-top:24px}
+.pie-foto{font-size:14px;line-height:1.45;color:var(--gris);margin-top:12px}
+.oscura .pie-foto{color:var(--gris-claro)}
 
 /* Servicios */
-#servicios .titulo{grid-column:1/6;align-self:start;position:sticky;top:110px}
+#servicios .titulo{grid-column:1/6;align-self:start;position:sticky;top:112px}
 .servicios{grid-column:6/13;list-style:none;margin:0;padding:0;border-top:2px solid var(--laca)}
 .servicios li{border-bottom:1px solid var(--linea)}
 .servicios button{display:flex;align-items:center;justify-content:space-between;gap:20px;width:100%;padding:26px 0;
   background:none;border:0;font:inherit;color:inherit;text-align:left;cursor:pointer}
 .servicios h3{transition:transform .45s var(--suave)}
-.servicios button:hover h3,.servicios .abierto h3{transform:translateX(14px)}
 .mas{position:relative;width:44px;height:44px;flex:none;border:1px solid var(--laca);border-radius:50%;
   transition:background .3s,transform .45s var(--suave)}
 .mas::before,.mas::after{content:"";position:absolute;left:50%;top:50%;width:16px;height:1.5px;margin:-.75px 0 0 -8px;background:var(--laca);
@@ -139,31 +177,59 @@ p{margin:0}
 .abierto .mas::after{transform:rotate(0)}
 .panel{display:grid;grid-template-rows:0fr;transition:grid-template-rows .5s var(--suave)}
 .abierto .panel{grid-template-rows:1fr}
-.panel>div{overflow:hidden}
-.panel p{color:var(--gris);max-width:32em;padding-left:14px}
-.panel a{display:inline-block;margin:16px 0 30px 14px;font-size:15px;font-weight:600}
+.panel>div{overflow:hidden;visibility:hidden;transition:visibility 0s .5s}
+.abierto .panel>div{visibility:visible;transition-delay:0s}
+.panel p{color:var(--gris);max-width:32em}
+.panel a{display:inline-block;margin:16px 0 30px;font-size:15px;font-weight:600}
+@media (min-width:901px){
+  .servicios .abierto h3{transform:translateX(14px)}
+  .panel p,.panel a{margin-left:14px}
+}
+@media (hover:hover) and (min-width:901px){.servicios button:hover h3{transform:translateX(14px)}}
+
+/* Comparador: la pintura bajo la luz de inspección */
+#luz .titulo{grid-column:1/8}
+#luz .texto{grid-column:8/13;align-self:end}
+#luz .texto p{color:var(--gris-claro);max-width:30em}
+.comparador{position:relative;margin-top:clamp(36px,5vw,72px);border-radius:var(--radio);overflow:hidden;aspect-ratio:16/8;
+  background:linear-gradient(180deg,#152250 0%,#0B1434 100%);touch-action:pan-y;cursor:ew-resize;-webkit-user-select:none;user-select:none;--corte:50%}
+.comparador canvas{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.comparador .corte{position:absolute;top:0;bottom:0;left:var(--corte);width:1px;background:rgba(255,255,255,.6);pointer-events:none}
+.asa{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:56px;height:56px;border-radius:50%;pointer-events:auto;
+  border:1px solid #fff;background:rgba(16,27,63,.78);color:#fff;cursor:ew-resize;touch-action:none;padding:0;display:grid;place-items:center;
+  -webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
+.asa svg{width:22px;height:22px}
+.rotulo{position:absolute;top:18px;font-size:14px;font-weight:500;color:#fff;background:rgba(10,18,48,.55);padding:6px 12px;border-radius:16px;pointer-events:none;
+  transition:opacity .25s}
+.rotulo.antes{left:18px}
+.rotulo.despues{right:18px}
 
 /* Costa: lo que el mar le hace al coche */
 #costa{background:var(--agua)}
-#costa h2{max-width:13em}
-.costa{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:clamp(40px,6vw,88px);list-style:none;padding:0}
-.costa li{border-top:2px solid var(--laca);padding-top:20px}
-.costa strong{display:block;font-stretch:125%;font-weight:600;font-size:clamp(46px,6.4vw,104px);line-height:1;letter-spacing:-.03em;
-  color:transparent;-webkit-text-stroke:1.5px var(--laca);transition:color .5s}
-.costa li:hover strong,.costa li.visto-movil strong{color:var(--laca)}
-.costa p{margin-top:18px;max-width:22em}
-.costa em{display:block;font-style:normal;font-weight:600;margin-top:12px}
+#costa h2{max-width:12.5em}
+#costa .rejilla{margin-top:clamp(40px,6vw,88px);align-items:start}
+#costa figure{grid-column:1/8;margin:0}
+#costa figure img{width:100%;border-radius:var(--radio);aspect-ratio:4/3;object-fit:cover}
+.costa{grid-column:8/13;list-style:none;margin:0;padding:0}
+.costa li{border-top:2px solid var(--laca);padding:18px 0 34px}
+.costa li:last-child{padding-bottom:0}
+.costa strong{display:block;font-stretch:125%;font-weight:600;font-size:clamp(44px,5.2vw,84px);line-height:1;letter-spacing:-.03em;
+  color:var(--agua);-webkit-text-stroke:3px var(--laca);paint-order:stroke fill;transition:color .5s}
+.costa li.lleno strong{color:var(--laca)}
+@media (hover:hover){.costa li:hover strong{color:var(--laca)}}
+.costa p{margin-top:14px;max-width:24em}
+.costa em{display:block;font-style:normal;font-weight:600;margin-top:8px}
 
 /* Jet ski */
-#jetski{background:var(--laca);color:#fff;position:relative;overflow:hidden;padding-bottom:calc(var(--seccion) + 90px)}
+#jetski{position:relative;overflow:hidden;padding-bottom:calc(var(--seccion) + 90px)}
 #jetski .titulo{grid-column:1/8}
 #jetski .cuerpo{grid-column:8/13;align-self:end}
-#jetski .cuerpo p{max-width:30em;color:#DCE6F7}
+#jetski .cuerpo p{max-width:30em;color:#E3EBF9}
 #jetski .boton{margin-top:28px}
 .olas{position:absolute;left:0;bottom:-2px;width:100%;height:120px;pointer-events:none}
-.olas svg{position:absolute;left:0;bottom:0;width:200%;height:100%;animation:ola 14s linear infinite}
-.olas svg:nth-child(2){animation-duration:22s;animation-direction:reverse;opacity:.5}
-.olas svg:nth-child(3){animation-duration:9s;opacity:.28;height:80%}
+.olas svg{position:absolute;left:0;bottom:0;width:200%;height:100%;animation:ola 14s linear infinite;will-change:transform}
+.olas svg:nth-child(1){animation-duration:9s;opacity:.3;height:84%}
+.olas svg:nth-child(2){animation-duration:22s;animation-direction:reverse;opacity:.55}
 @keyframes ola{to{transform:translateX(-50%)}}
 
 /* Cita */
@@ -173,79 +239,112 @@ p{margin:0}
 .pasos li::before{content:counter(paso);font-stretch:125%;font-weight:500;font-size:26px;line-height:1.1;font-variant-numeric:tabular-nums}
 .pasos li p{color:var(--gris)}
 .pasos li strong{display:block;color:var(--tinta);font-weight:600}
-.formulario{grid-column:7/13;background:var(--blanco);border-radius:10px;padding:clamp(24px,3vw,44px);align-self:start;
-  box-shadow:0 30px 60px -30px rgba(16,27,63,.28)}
+.formulario{grid-column:7/13;background:var(--blanco);border-radius:var(--radio);padding:clamp(24px,3vw,44px);align-self:start;
+  box-shadow:0 30px 60px -30px rgba(16,27,63,.3)}
 .formulario h3{font-size:clamp(22px,2vw,28px)}
 .campo{margin-top:22px}
 .campo label{display:block;font-size:15px;font-weight:600;margin-bottom:8px}
 .campo .ayuda{font-weight:400;color:var(--gris)}
-.campo input,.campo select{width:100%;height:54px;padding:0 14px;font:inherit;color:var(--tinta);background:var(--espuma);
-  border:1px solid var(--linea);border-radius:6px}
+.campo input,.campo select{width:100%;height:54px;padding:0 14px;font:inherit;color:var(--tinta);background-color:var(--espuma);
+  border:1px solid #BCC7DA;border-radius:8px;-webkit-appearance:none;appearance:none}
+.campo select{padding-right:44px;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23101B3F' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;background-position:right 12px center;background-size:20px}
+.campo input::placeholder{color:#7F8AA8;opacity:1}
 .campo input:focus,.campo select:focus{outline:3px solid var(--reflejo);outline-offset:1px;border-color:var(--laca)}
 .campo input[aria-invalid="true"]{border-color:#B3261E}
 .error{color:#B3261E;font-size:14px;margin-top:6px}
 .formulario .boton{margin-top:28px;width:100%}
 .formulario .letra{font-size:13px;line-height:1.45;color:var(--gris);margin-top:14px}
 
-/* Visítanos */
+/* Ven a vernos */
 #visita{background:var(--laca-2);color:#fff}
-#visita .foto{grid-column:1/8;margin:0;align-self:start}
-#visita .foto div{overflow:hidden;border-radius:10px;clip-path:inset(0 100% 0 0);transition:clip-path 1.2s var(--suave)}
-#visita .foto.visto div{clip-path:inset(0)}
-#visita .foto img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;transform:scale(1.12);transition:transform 1.6s var(--suave)}
-#visita .foto.visto img{transform:none}
-#visita figcaption{font-size:14px;color:#C9D6EE;margin-top:12px}
-#visita .datos{grid-column:9/13}
-.ahora{display:inline-flex;align-items:center;gap:10px;margin-top:22px}
-.ahora i{width:10px;height:10px;border-radius:50%;background:#7C89AC;flex:none}
-.ahora.abierto i{background:#5FD38D;box-shadow:0 0 0 0 rgba(95,211,141,.6);animation:pulso 2s infinite}
-@keyframes pulso{to{box-shadow:0 0 0 10px rgba(95,211,141,0)}}
+#visita .datos{grid-column:1/6}
+#visita .ahora{margin-top:22px}
 .horas{margin:28px 0 0;border-top:2px solid var(--reflejo)}
-.horas div{display:grid;grid-template-columns:1fr auto;gap:24px;padding:14px 0;border-bottom:1px solid rgba(255,255,255,.16)}
-.horas dt{color:#C9D6EE}
+.horas div{display:grid;grid-template-columns:1fr auto;gap:24px;padding:14px 0;border-bottom:1px solid var(--linea-oscura)}
+.horas dt{color:var(--gris-claro)}
 .horas dd{margin:0;font-variant-numeric:tabular-nums;font-weight:500}
-.direccion{font-stretch:112%;font-size:clamp(20px,1.9vw,25px);font-weight:500;line-height:1.3;margin-top:36px}
-.contacto{display:flex;flex-direction:column;align-items:flex-start;gap:14px;margin-top:24px}
+.direccion{font-stretch:112%;font-size:clamp(20px,1.9vw,25px);font-weight:500;line-height:1.3;margin-top:36px;font-style:normal}
+.contacto{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+.mapa{grid-column:7/13;margin:0;align-self:start}
+.mapa .lamina{position:relative;border-radius:var(--radio);overflow:hidden;aspect-ratio:4/3;background:#0A1230;--px:42.7%;--py:50.15%}
+.mapa .lamina img{width:100%;height:100%;object-fit:cover;transform:scale(1.08);opacity:0;transition:transform 1.8s var(--suave),opacity 1s}
+.mapa.visto .lamina img{transform:none;opacity:1}
+.mapa .lamina::after{content:"";position:absolute;inset:0;pointer-events:none;border-radius:inherit;box-shadow:inset 0 0 0 1px rgba(143,193,234,.22)}
+.chincheta{position:absolute;left:var(--px);top:var(--py);width:0;height:0}
+.chincheta::before,.chincheta::after{content:"";position:absolute;left:-9px;top:-9px;width:18px;height:18px;border-radius:50%}
+.chincheta::before{background:#fff;box-shadow:0 0 0 5px rgba(143,193,234,.35),0 2px 10px rgba(0,0,0,.5)}
+.chincheta::after{border:2px solid #fff;animation:onda 2.6s var(--suave) infinite}
+@keyframes onda{from{transform:scale(1);opacity:.9}to{transform:scale(4.2);opacity:0}}
+.chincheta b{position:absolute;left:18px;bottom:14px;white-space:nowrap;background:#fff;color:var(--laca);font-weight:600;font-size:14px;line-height:1.25;
+  padding:8px 12px;border-radius:10px 10px 10px 2px;box-shadow:0 8px 24px rgba(0,0,0,.35)}
+.chincheta b small{display:block;font-weight:400;font-size:12.5px;color:var(--gris)}
+.lugar{position:absolute;transform:translate(-50%,-50%);font-size:12.5px;font-weight:500;letter-spacing:.01em;color:#B9C9EA;white-space:nowrap;
+  text-shadow:0 1px 6px #0A1230,0 0 2px #0A1230;pointer-events:none}
+.mapa .osm{position:absolute;right:8px;bottom:6px;font-size:11px;color:#9FB0D6;text-decoration:none;background:rgba(10,18,48,.6);padding:2px 6px;border-radius:6px}
 
 /* Pie */
-footer{background:var(--laca-2);color:#C9D6EE;font-size:14px;overflow:hidden}
-.firma{display:block;font-stretch:125%;font-weight:600;font-size:24vw;line-height:.74;letter-spacing:-.02em;text-align:center;
-  color:transparent;-webkit-text-stroke:1px rgba(143,193,234,.5);white-space:nowrap;user-select:none;margin-bottom:-.02em}
-footer .ancho{display:flex;flex-wrap:wrap;gap:8px 32px;justify-content:space-between;padding-top:22px;padding-bottom:22px;
-  border-top:1px solid rgba(255,255,255,.16)}
+footer{background:var(--laca-2);color:var(--gris-claro);font-size:15px;overflow:hidden;border-top:1px solid var(--linea-oscura)}
+.pie{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:40px 24px;padding-top:clamp(48px,6vw,80px);padding-bottom:clamp(40px,5vw,64px)}
+.pie img{width:150px}
+.pie .lema{margin-top:18px;max-width:17em}
+.pie h4{margin:0 0 14px;font-size:13px;font-weight:600;color:#fff}
+.pie ul{list-style:none;margin:0;padding:0}
+.pie li{padding:4px 0}
+.pie a{text-decoration:none;color:#fff}
+@media (hover:hover){.pie a:hover{text-decoration:underline;text-underline-offset:4px}}
+.firma{display:block;font-stretch:125%;font-weight:600;font-size:23.6vw;line-height:.74;letter-spacing:-.02em;text-align:center;
+  color:var(--laca-2);-webkit-text-stroke:2px #2A3A6C;paint-order:stroke fill;white-space:nowrap;-webkit-user-select:none;user-select:none;margin-bottom:-.02em}
+.legal{display:flex;flex-wrap:wrap;gap:8px 28px;justify-content:space-between;padding-top:20px;padding-bottom:20px;border-top:1px solid var(--linea-oscura);font-size:13.5px}
+.legal a{color:inherit;text-underline-offset:4px}
+.legal span+a{margin-left:24px}
 
 /* Barra de acciones en el móvil */
 .barra{display:none}
 
 @media (max-width:900px){
+  .solo-ancho{display:none!important}
   .cabecera nav{display:none}
-  .cabecera .ancho{height:60px}
-  .portada .ancho{display:flex;flex-direction:column;align-items:stretch;min-height:100svh;padding-top:84px;padding-bottom:150px;justify-content:center}
-  .logo{order:-1;width:min(70vw,300px);height:auto;align-self:center;margin-bottom:34px}
-  .estado-pintura{bottom:26px;max-width:calc(50% - 44px)}
-  .estado-pintura.antes{text-align:right}
-  .asa{bottom:78px}
-  .corte{background:rgba(255,255,255,.3)}
+  .cabecera .ancho{height:62px;gap:12px}
+  .idioma{height:38px}
+  .portada .ancho{justify-content:flex-start;padding-top:82px;padding-bottom:clamp(120px,22vh,180px)}
+  .portada::after{background:linear-gradient(180deg,rgba(10,18,48,.92) 0%,rgba(10,18,48,.8) 48%,rgba(10,18,48,.5) 70%,rgba(10,18,48,0) 92%)}
+  .logo{width:min(50vw,196px)}
+  .portada h1{font-size:clamp(32px,9vw,40px);margin-top:20px}
+  .entradilla{margin-top:16px}
+  .acciones{margin-top:24px}
+  .portada .ahora{margin-top:18px}
+  .acciones{width:100%}
+  .acciones .boton{width:100%}
   .rejilla{display:block}
-  .rejilla>*+*{margin-top:44px}
+  .rejilla>*+*{margin-top:40px}
   #servicios .titulo{position:static}
-  .servicios button:hover h3{transform:none}
-  .servicios .abierto h3{transform:translateX(0)}
-  .panel p,.panel a{padding-left:0;margin-left:0}
+  .comparador{aspect-ratio:4/5}
+  .rotulo{top:14px;font-size:13px}
+  .rotulo.antes{left:12px}
+  .rotulo.despues{right:12px}
+  #costa .rejilla{margin-top:36px}
   .costa{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:16px;margin-left:calc(var(--margen)*-1);margin-right:calc(var(--margen)*-1);
-    padding:0 var(--margen) 8px;scrollbar-width:none}
+    padding:0 var(--margen) 8px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
   .costa::-webkit-scrollbar{display:none}
-  .costa li{flex:0 0 78%;scroll-snap-align:center}
-  .costa strong{font-size:64px}
+  .costa li{flex:0 0 78%;scroll-snap-align:center;padding-bottom:0}
+  .costa strong{font-size:60px}
   #jetski{padding-bottom:calc(var(--seccion) + 70px)}
   .olas{height:80px}
-  footer{padding-bottom:calc(76px + env(safe-area-inset-bottom))}
-  .barra{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:8px;position:fixed;z-index:30;left:10px;right:10px;
-    bottom:calc(10px + env(safe-area-inset-bottom));padding:8px;border-radius:34px;background:rgba(10,18,48,.92);
-    backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);box-shadow:0 12px 30px -8px rgba(10,18,48,.5);
-    transform:translateY(140%);transition:transform .45s var(--suave)}
+  .mapa .lamina{aspect-ratio:1/1;--px:38.8%;--py:49.9%}
+  .chincheta b{left:14px}
+  .contacto .boton{flex:1;padding:0 16px}
+  .pie{grid-template-columns:1fr 1fr;gap:36px 20px}
+  .pie>div:first-child{grid-column:1/-1}
+  .legal{display:block}
+  .legal p+p{margin-top:8px}
+  footer{padding-bottom:calc(84px + env(safe-area-inset-bottom))}
+  .barra{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:6px;position:fixed;z-index:30;left:10px;right:10px;
+    bottom:calc(10px + env(safe-area-inset-bottom));padding:7px;border-radius:34px;background:rgba(10,18,48,.92);
+    -webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);box-shadow:0 12px 30px -8px rgba(10,18,48,.55),inset 0 0 0 1px rgba(255,255,255,.08);
+    transform:translateY(160%);transition:transform .45s var(--suave)}
   .barra.visible{transform:none}
-  .barra a{display:flex;align-items:center;justify-content:center;gap:8px;height:48px;border-radius:24px;color:#fff;
+  .barra a{display:flex;align-items:center;justify-content:center;gap:8px;height:50px;border-radius:25px;color:#fff;
     font-size:15px;font-weight:600;text-decoration:none}
   .barra a:first-child{background:#fff;color:var(--laca)}
   .barra svg{width:18px;height:18px;flex:none}
@@ -254,57 +353,58 @@ footer .ancho{display:flex;flex-wrap:wrap;gap:8px 32px;justify-content:space-bet
   html{scroll-behavior:auto}
   *,*::before,*::after{animation:none!important;transition:none!important}
   .entra{clip-path:none;transform:none}
-  #visita .foto div{clip-path:none}
-  #visita .foto img{transform:none}
+  .portada .fondo img,.mapa .lamina img{transform:none;opacity:1}
 }
 </style>
+<noscript><style>
+.entra{clip-path:none;transform:none}
+.logo,.entradilla,.acciones,.portada .ahora{opacity:1;transform:none}
+.portada .fondo img,.mapa .lamina img{transform:none;opacity:1}
+.panel{grid-template-rows:1fr}.panel>div{visibility:visible}
+</style></noscript>
 </head>
 <body>
 
-<svg width="0" height="0" style="position:absolute" aria-hidden="true">
-  <symbol id="chispa" viewBox="0 0 24 24"><path d="M12 0c.8 7.500 4.500 11.200 12 12-7.500.8-11.200 4.500-12 12-.8-7.500-4.500-11.200-12-12 7.500-.8 11.200-4.500 12-12Z"/></symbol>
-  <symbol id="wa" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M21 11.500a8.500 8.500 0 0 1-12.600 7.400L3 20.500l1.700-5A8.500 8.500 0 1 1 21 11.500Z"/></symbol>
-  <symbol id="tel" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M5 3h4l2 5-2.500 1.500a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2Z"/></symbol>
-  <symbol id="pin" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M12 21s7-6.200 7-11.500a7 7 0 0 0-14 0C5 14.800 12 21 12 21Z"/><circle cx="12" cy="9.500" r="2.500" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="chispa" viewBox="0 0 24 24"><path d="M12 0c.8 7.5 4.5 11.2 12 12-7.5.8-11.2 4.5-12 12-.8-7.5-4.5-11.2-12-12 7.5-.8 11.2-4.5 12-12Z"/></symbol>
+  <symbol id="wa" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M21 11.5a8.5 8.5 0 0 1-12.6 7.4L3 20.5l1.7-5A8.5 8.5 0 1 1 21 11.5Z"/></symbol>
+  <symbol id="tel" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2Z"/></symbol>
+  <symbol id="pin" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M12 21s7-6.2 7-11.5a7 7 0 0 0-14 0C5 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
 </svg>
+
+<a class="saltar" href="#servicios" data-t="saltar">Saltar al contenido</a>
 
 <header class="cabecera" id="cabecera">
   <div class="ancho">
-    <a class="marca" href="#inicio">Pixel Car Spa</a>
+    <a class="marca" href="#inicio"><svg class="chispa" aria-hidden="true"><use href="#chispa"/></svg>Pixel Car Spa</a>
     <nav aria-label="Secciones">
       <a href="#servicios" data-t="nav1">Servicios</a>
       <a href="#jetski" data-t="nav2">Jet ski</a>
-      <a href="#cita" data-t="nav3">Pedir cita</a>
       <a href="#visita" data-t="nav4">Horario y ubicación</a>
     </nav>
     <button class="idioma" type="button" id="idioma" aria-label="Switch to English">English</button>
+    <a class="boton claro pequeno solo-ancho" href="#cita" data-t="nav3">Pedir cita</a>
   </div>
 </header>
 
 <main>
 <section class="portada" id="inicio">
-  <canvas aria-hidden="true"></canvas>
+  <picture class="fondo">
+    <source media="(max-width:900px)" type="image/webp" srcset="img/gotas-v-720.webp 720w, img/gotas-v-1080.webp 1080w" sizes="100vw">
+    <source media="(max-width:900px)" srcset="img/gotas-v-720.jpg 720w" sizes="100vw">
+    <source type="image/webp" srcset="img/gotas-h-1600.webp 1600w, img/gotas-h-2400.webp 2400w" sizes="100vw">
+    <img src="img/gotas-h-1600.jpg" width="1600" height="900" alt="" fetchpriority="high" decoding="async">
+  </picture>
   <div class="ancho">
-    <div class="texto">
-      <h1 data-t="h1">Detailing y protección cerámica en Jávea</h1>
-      <p class="entradilla" data-t="lead">Lavado premium, detailing interior y exterior, reparaciones menores y servicio de jet ski. Trabajamos con cita, para dedicarle a tu coche el tiempo que necesita.</p>
-      <div class="acciones">
-        <a class="boton claro" data-wa="general" href="https://wa.me/34615836314">
-          <svg aria-hidden="true"><use href="#wa"/></svg><span data-t="cta">Pedir cita por WhatsApp</span>
-        </a>
-        <a class="enlace" href="tel:+34615836314">+34 615 836 314</a>
-      </div>
+    <img class="logo" src="img/logo-720.webp" width="720" height="634" alt="Pixel Car Spa" fetchpriority="high">
+    <h1 data-t="h1">Detailing y protección cerámica en Jávea</h1>
+    <p class="entradilla"><span data-t="lead">Lavado premium, detailing interior y exterior, reparaciones menores y servicio de jet ski.</span> <span class="solo-ancho" data-t="lead2">Trabajamos con cita, para dedicarle a tu coche el tiempo que necesita.</span></p>
+    <div class="acciones">
+      <a class="boton claro" data-wa="general" href="https://wa.me/34615836314"><svg aria-hidden="true"><use href="#wa"/></svg><span data-t="cta">Pedir cita por WhatsApp</span></a>
+      <a class="boton linea solo-ancho" href="#servicios" data-t="cta2">Ver servicios</a>
     </div>
-    <img class="logo" src="img/logo-frontal.png" width="1340" height="1180" alt="Pixel Car Spa">
+    <p class="ahora" aria-live="polite"><i></i><span></span></p>
   </div>
-  <div class="corte">
-    <button class="asa" type="button" role="slider" aria-valuemin="5" aria-valuemax="95" aria-valuenow="50"
-      aria-label="Comparar la pintura sin corregir y corregida">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6 3 12l6 6M15 6l6 6-6 6"/></svg>
-    </button>
-  </div>
-  <p class="estado-pintura antes" data-t="antes">Pintura sin corregir</p>
-  <p class="estado-pintura despues" data-t="despues">Corregida y protegida</p>
 </section>
 
 <div class="cinta" aria-hidden="true">
@@ -359,24 +459,54 @@ footer .ancho{display:flex;flex-wrap:wrap;gap:8px 32px;justify-content:space-bet
   </div>
 </section>
 
-<section class="seccion" id="costa">
+<section class="seccion oscura" id="luz">
   <div class="ancho">
-    <h2 class="entra" data-t="k_h2">Vivir junto al mar le pasa factura a tu coche</h2>
-    <ul class="costa">
-      <li><strong data-t="k1">Sol</strong>
-        <p data-t="k1p">Los rayos UV castigan el barniz y apagan el color, sobre todo en el techo y el capó.</p>
-        <em data-t="k1e">Lo frena la protección cerámica.</em></li>
-      <li><strong data-t="k2">Salitre</strong>
-        <p data-t="k2p">La brisa deja sal sobre la carrocería, y la sal acelera la corrosión.</p>
-        <em data-t="k2e">Lo frena un buen lavado a tiempo.</em></li>
-      <li><strong data-t="k3">Arena</strong>
-        <p data-t="k3p">Se cuela en alfombrillas y tapicería, y araña la pintura si se lava con prisas.</p>
-        <em data-t="k3e">La saca el detailing interior.</em></li>
-    </ul>
+    <div class="rejilla">
+      <div class="titulo"><h2 class="entra" data-t="l_h2">La diferencia se ve bajo la luz</h2></div>
+      <div class="texto"><p data-t="l_p">Los remolinos y microarañazos aparecen cuando el sol o un foco dan de lleno en la pintura. Mueve la línea y compara la misma pintura antes y después de corregirla.</p></div>
+    </div>
+    <div class="comparador" id="comparador">
+      <canvas aria-hidden="true"></canvas>
+      <span class="rotulo antes" data-t="antes">Sin corregir</span>
+      <span class="rotulo despues" data-t="despues">Corregida y protegida</span>
+      <div class="corte">
+        <button class="asa" type="button" role="slider" aria-valuemin="5" aria-valuemax="95" aria-valuenow="50"
+          aria-label="Comparar la pintura sin corregir y corregida">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6 3 12l6 6M15 6l6 6-6 6"/></svg>
+        </button>
+      </div>
+    </div>
+    <p class="pie-foto" data-t="l_pie">Simulación de una pintura azul bajo la lámpara de inspección.</p>
   </div>
 </section>
 
-<section class="seccion" id="jetski">
+<section class="seccion" id="costa">
+  <div class="ancho">
+    <h2 class="entra" data-t="k_h2">Vivir junto al mar le pasa factura a tu coche</h2>
+    <div class="rejilla">
+      <figure>
+        <picture>
+          <source type="image/webp" srcset="img/gotas-c-900.webp 900w, img/gotas-c-1800.webp 1800w" sizes="(max-width:900px) 100vw, 56vw">
+          <img src="img/gotas-c-900.jpg" width="1800" height="1350" loading="lazy" decoding="async" alt="Gotas de agua redondas sobre una pintura azul oscuro">
+        </picture>
+        <figcaption class="pie-foto" data-t="k_pie">Así perla el agua sobre una pintura con protección cerámica: resbala y se lleva la suciedad.</figcaption>
+      </figure>
+      <ul class="costa">
+        <li><strong data-t="k1">Sol</strong>
+          <p data-t="k1p">Los rayos UV castigan el barniz y apagan el color, sobre todo en el techo y el capó.</p>
+          <em data-t="k1e">Lo frena la protección cerámica.</em></li>
+        <li><strong data-t="k2">Salitre</strong>
+          <p data-t="k2p">La brisa deja sal sobre la carrocería, y la sal acelera la corrosión.</p>
+          <em data-t="k2e">Lo frena un buen lavado a tiempo.</em></li>
+        <li><strong data-t="k3">Arena</strong>
+          <p data-t="k3p">Se cuela en alfombrillas y tapicería, y araña la pintura si se lava con prisas.</p>
+          <em data-t="k3e">La saca el detailing interior.</em></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="seccion oscura" id="jetski">
   <div class="ancho rejilla">
     <div class="titulo">
       <h2 class="entra" data-t="j_h2">También cuidamos tu moto de agua</h2>
@@ -387,9 +517,9 @@ footer .ancho{display:flex;flex-wrap:wrap;gap:8px 32px;justify-content:space-bet
     </div>
   </div>
   <div class="olas" aria-hidden="true">
-    <svg viewBox="0 0 2880 120" preserveAspectRatio="none"><path fill="#F2F5F9" d="M0 60c240-50 480-50 720 0s480 50 720 0 480-50 720 0 480 50 720 0v60H0Z"/></svg>
-    <svg viewBox="0 0 2880 120" preserveAspectRatio="none"><path fill="#CFE4F5" d="M0 50c180-40 360-40 540 0s360 40 540 0 360-40 540 0 360 40 540 0 360-40 540 0 180 20 180 20v50H0Z"/></svg>
     <svg viewBox="0 0 2880 120" preserveAspectRatio="none"><path fill="#8FC1EA" d="M0 40c240-40 480-40 720 0s480 40 720 0 480-40 720 0 480 40 720 0v80H0Z"/></svg>
+    <svg viewBox="0 0 2880 120" preserveAspectRatio="none"><path fill="#D5E6F6" d="M0 50c180-40 360-40 540 0s360 40 540 0 360-40 540 0 360 40 540 0 360-40 540 0 180 20 180 20v50H0Z"/></svg>
+    <svg viewBox="0 0 2880 120" preserveAspectRatio="none"><path fill="#F3F6FA" d="M0 60c240-50 480-50 720 0s480 50 720 0 480-50 720 0 480 50 720 0v60H0Z"/></svg>
   </div>
 </section>
 
@@ -426,7 +556,7 @@ footer .ancho{display:flex;flex-wrap:wrap;gap:8px 32px;justify-content:space-bet
         <label for="f-cuando"><span data-t="f_cuando">Cuándo te viene bien</span> <span class="ayuda" data-t="f_opc">(opcional)</span></label>
         <input id="f-cuando" name="cuando" type="text" autocomplete="off" placeholder="El jueves por la mañana">
       </div>
-      <button class="boton" type="submit"><svg aria-hidden="true"><use href="#wa"/></svg><span data-t="f_enviar">Abrir WhatsApp con mi mensaje</span></button>
+      <button class="boton" type="submit"><svg aria-hidden="true"><use href="#wa"/></svg><span data-t="f_enviar">Continuar en WhatsApp</span></button>
       <p class="letra" data-t="f_letra">No guardamos nada en esta web: el mensaje se envía desde tu WhatsApp y puedes cambiarlo antes de mandarlo.</p>
     </form>
   </div>
@@ -434,34 +564,71 @@ footer .ancho{display:flex;flex-wrap:wrap;gap:8px 32px;justify-content:space-bet
 
 <section class="seccion" id="visita">
   <div class="ancho rejilla">
-    <figure class="foto">
-      <div><img src="img/local.jpg" width="1500" height="1026" loading="lazy" alt="Fachada de Pixel Car Spa con la lona del logotipo" data-t-alt="foto_alt"></div>
-      <figcaption data-t="foto_pie">Busca la lona del pomerania en la avenida.</figcaption>
-    </figure>
     <div class="datos">
       <h2 class="entra" data-t="v_h2">Ven a vernos</h2>
-      <p class="ahora" id="ahora" aria-live="polite"><i></i><span></span></p>
+      <p class="ahora" aria-live="polite"><i></i><span></span></p>
       <dl class="horas">
         <div><dt data-t="h1d">Lunes a viernes</dt><dd>09:00 – 14:00</dd></div>
         <div><dt data-t="h2d">Tardes</dt><dd data-t="cita_previa">Con cita previa</dd></div>
         <div><dt data-t="h3d">Sábados y domingos</dt><dd data-t="cita_previa">Con cita previa</dd></div>
       </dl>
-      <p class="direccion">Av. del Rei Juan Carlos I, 83<br>Jávea</p>
+      <address class="direccion">Av. del Rei Juan Carlos I, 83<br>03730 Jávea, Alicante</address>
       <div class="contacto">
-        <a class="boton claro" target="_blank" rel="noopener" id="mapa"
-          href="https://www.google.com/maps/search/?api=1&query=Pixel+Car+Spa%2C+Av.+del+Rei+Juan+Carlos+I+83%2C+J%C3%A1vea"><svg aria-hidden="true"><use href="#pin"/></svg><span data-t="d_llegar">Cómo llegar</span></a>
-        <a class="enlace" data-wa="general" href="https://wa.me/34615836314">WhatsApp +34 615 836 314</a>
-        <a class="enlace" target="_blank" rel="noopener" href="https://www.instagram.com/pixel.carspa/">Instagram @pixel.carspa</a>
+        <a class="boton claro" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Pixel+Car+Spa%2C+Av.+del+Rei+Juan+Carlos+I+83%2C+J%C3%A1vea"><svg aria-hidden="true"><use href="#pin"/></svg><span data-t="d_llegar">Cómo llegar</span></a>
+        <a class="boton linea" href="tel:+34615836314"><svg aria-hidden="true"><use href="#tel"/></svg><span>615 836 314</span></a>
       </div>
     </div>
+    <figure class="mapa">
+      <div class="lamina">
+        <picture>
+          <source media="(max-width:900px)" type="image/webp" srcset="img/mapa-m-600.webp 600w, img/mapa-m-1200.webp 1200w" sizes="100vw">
+          <source type="image/webp" srcset="img/mapa-800.webp 800w, img/mapa-1600.webp 1600w" sizes="48vw">
+          <img src="img/mapa-800.jpg" width="1600" height="1200" loading="lazy" decoding="async" alt="Plano de Jávea con la Av. del Rei Juan Carlos I resaltada, entre el casco antiguo y el puerto">
+        </picture>
+        <span class="lugar" style="left:17%;top:74%" data-t="m_casco">Casco antiguo</span>
+        <span class="lugar" style="left:81%;top:19%" data-t="m_puerto">Puerto</span>
+        <span class="lugar solo-ancho" style="left:90%;top:62%" data-t="m_mar">Mar Mediterráneo</span>
+        <div class="chincheta"><b>Pixel Car Spa<small>Av. del Rei Juan Carlos I, 83</small></b></div>
+        <a class="osm" href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">© OpenStreetMap</a>
+      </div>
+    </figure>
   </div>
 </section>
 </main>
 
 <footer>
+  <div class="ancho pie">
+    <div>
+      <img src="img/logo-360.webp" width="360" height="317" loading="lazy" alt="Pixel Car Spa">
+      <p class="lema" data-t="pie_lema">Premium car care en Jávea: detailing, protección y perfección.</p>
+    </div>
+    <div>
+      <h4 data-t="pie_c">Contacto</h4>
+      <ul>
+        <li><a data-wa="general" href="https://wa.me/34615836314">WhatsApp</a></li>
+        <li><a href="tel:+34615836314">+34 615 836 314</a></li>
+        <li><a target="_blank" rel="noopener" href="https://www.instagram.com/pixel.carspa/">Instagram @pixel.carspa</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 data-t="pie_d">Dónde estamos</h4>
+      <ul>
+        <li>Av. del Rei Juan Carlos&nbsp;I,&nbsp;83</li>
+        <li>03730 Jávea, Alicante</li>
+        <li><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Pixel+Car+Spa%2C+Av.+del+Rei+Juan+Carlos+I+83%2C+J%C3%A1vea" data-t="d_llegar">Cómo llegar</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 data-t="pie_h">Horario</h4>
+      <ul>
+        <li data-t="pie_h1">Lunes a viernes, de 9:00 a 14:00</li>
+        <li data-t="pie_h2">Tardes y fines de semana, con cita previa</li>
+      </ul>
+    </div>
+  </div>
   <span class="firma" aria-hidden="true">PIXEL</span>
-  <div class="ancho">
-    <p>Pixel Car Spa. Av. del Rei Juan Carlos I, 83, Jávea</p>
+  <div class="ancho legal">
+    <p><span>© 2026 Pixel Car Spa</span><a href="aviso-legal.html" data-t="pie_legal">Aviso legal y privacidad</a></p>
     <p data-t="pie">Propuesta de web, no oficial</p>
   </div>
 </footer>
@@ -477,14 +644,16 @@ footer .ancho{display:flex;flex-wrap:wrap;gap:8px 32px;justify-content:space-bet
 "use strict";
 var TEL="34615836314";
 var quieto=window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+function $(s,c){return (c||document).querySelector(s)}
+function $$(s,c){return Array.prototype.slice.call((c||document).querySelectorAll(s))}
 
 /* ---------- Idioma ---------- */
 var EN={
+ saltar:"Skip to content",
  nav1:"Services",nav2:"Jet ski",nav3:"Book",nav4:"Hours and location",
  h1:"Car detailing and ceramic protection in Jávea",
- lead:"Premium wash, interior and exterior detailing, minor repairs and jet ski service. We work by appointment, so your car gets the time it needs.",
- cta:"Book on WhatsApp",
- antes:"Uncorrected paint",despues:"Corrected and protected",
+ lead:"Premium wash, interior and exterior detailing, minor repairs and jet ski service.",lead2:"We work by appointment, so your car gets the time it needs.",
+ cta:"Book on WhatsApp",cta2:"See services",
  s_h2:"What we do for your car",
  s_nota:"Every car arrives in a different state. Send us a few photos and we will tell you what it needs and what it costs, no obligation.",
  s1:"Premium wash",s1p:"A careful wash of bodywork, wheels and glass, dried so it leaves no marks and no new scratches.",
@@ -493,7 +662,12 @@ var EN={
  s4:"Ceramic protection",s4p:"A coating that shields the paint from the sun and the salt air of the coast. Water runs off and the car stays clean for longer.",
  s5:"Minor repairs",s5p:"Scuffs, scratches and small damage. Show us a photo and we will tell you if it can be fixed.",
  preguntar:"Ask on WhatsApp",
+ l_h2:"The difference shows under the light",
+ l_p:"Swirl marks and fine scratches appear when the sun or a lamp hits the paint head on. Move the line and compare the same paint before and after correction.",
+ antes:"Uncorrected",despues:"Corrected and protected",
+ l_pie:"Simulation of blue paint under an inspection lamp.",
  k_h2:"Living by the sea takes its toll on your car",
+ k_pie:"This is how water beads on paint with ceramic protection: it rolls off and takes the dirt with it.",
  k1:"Sun",k1p:"UV rays wear down the clear coat and fade the colour, above all on the roof and bonnet.",k1e:"Ceramic protection slows it down.",
  k2:"Salt",k2p:"The sea breeze leaves salt on the bodywork, and salt speeds up corrosion.",k2e:"A proper wash in time stops it.",
  k3:"Sand",k3p:"It gets into mats and upholstery, and scratches the paint when the car is washed in a hurry.",k3e:"Interior detailing gets it out.",
@@ -507,21 +681,29 @@ var EN={
  f_h3:"Your booking",f_coche:"Vehicle",f_coche_a:"(make, model and year)",f_serv:"Service",
  o_jet:"Jet ski service",o_nose:"Not sure, please advise",
  f_cuando:"When suits you",f_opc:"(optional)",
- f_enviar:"Open WhatsApp with my message",
+ f_enviar:"Continue on WhatsApp",
  f_letra:"This website stores nothing: the message is sent from your own WhatsApp and you can edit it before sending.",
- foto_pie:"Look for the Pomeranian banner on the avenue.",
  v_h2:"Come and see us",h1d:"Monday to Friday",h2d:"Afternoons",h3d:"Saturdays and Sundays",cita_previa:"By appointment",
  d_llegar:"Get directions",
+ m_casco:"Old town",m_puerto:"Port",m_mar:"Mediterranean Sea",
+ pie_lema:"Premium car care in Jávea: detailing, protection and perfection.",
+ pie_c:"Contact",pie_d:"Where we are",pie_h:"Opening hours",
+ pie_h1:"Monday to Friday, 9:00 to 14:00",pie_h2:"Afternoons and weekends, by appointment",
+ pie_legal:"Legal notice and privacy",
  b_cita:"Book",b_llamar:"Call",b_ir:"Go",
  pie:"Website proposal, not official"
 };
 var SUELTOS={
- es:{asa:"Comparar la pintura sin corregir y corregida",ph:"El jueves por la mañana",alt:"Fachada de Pixel Car Spa con la lona del logotipo",
-     titulo:document.title,desc:document.querySelector('meta[name=description]').content,barra:"Contacto rápido"},
- en:{asa:"Compare uncorrected and corrected paint",ph:"Thursday morning",alt:"Pixel Car Spa shopfront with the logo banner",
-     titulo:"Pixel Car Spa. Car detailing and ceramic protection in Jávea",
+ es:{asa:"Comparar la pintura sin corregir y corregida",ph:"El jueves por la mañana",
+     k_alt:"Gotas de agua redondas sobre una pintura azul oscuro",
+     m_alt:"Plano de Jávea con la Av. del Rei Juan Carlos I resaltada, entre el casco antiguo y el puerto",
+     titulo:document.title,desc:$('meta[name=description]').content,barra:"Contacto rápido",nav:"Secciones"},
+ en:{asa:"Compare uncorrected and corrected paint",ph:"Thursday morning",
+     k_alt:"Round water beads on dark blue paint",
+     m_alt:"Map of Jávea with Av. del Rei Juan Carlos I highlighted, between the old town and the port",
+     titulo:"Pixel Car Spa | Car detailing and ceramic protection in Jávea",
      desc:"Premium wash, interior and exterior detailing, ceramic protection, minor repairs and jet ski service in Jávea. Book on WhatsApp: +34 615 836 314.",
-     barra:"Quick contact"}
+     barra:"Quick contact",nav:"Sections"}
 };
 var MSG={
  es:{general:"Hola, quería pedir cita en Pixel Car Spa.",serv:"Hola, quería información sobre: ",
@@ -534,7 +716,7 @@ var MSG={
      abierto:"Open now, until 14:00",cerrado:"Right now we work by appointment"}
 };
 var ES={},lang="es";
-var nodos=document.querySelectorAll("[data-t]"),h1=document.querySelector(".portada h1");
+var nodos=$$("[data-t]"),h1=$(".portada h1");
 nodos.forEach(function(n){ES[n.dataset.t]=n.textContent});
 function t(k){return (lang==="en"?EN:ES)[k]}
 function wa(texto){return "https://wa.me/"+TEL+"?text="+encodeURIComponent(texto)}
@@ -547,7 +729,7 @@ function partirTitular(){
   palabras.forEach(function(p,i){
     var caja=document.createElement("span"),dentro=document.createElement("i");
     caja.className="p";caja.setAttribute("aria-hidden","true");
-    dentro.textContent=p;dentro.style.transitionDelay=(i*70)+"ms";
+    dentro.textContent=p;dentro.style.transitionDelay=(180+i*70)+"ms";
     caja.appendChild(dentro);h1.appendChild(caja);
     if(i<palabras.length-1)h1.appendChild(document.createTextNode(" "));
   });
@@ -557,24 +739,31 @@ function aplicarIdioma(){
   document.documentElement.lang=lang;
   nodos.forEach(function(n){if(n!==h1)n.textContent=t(n.dataset.t)});
   partirTitular();
-  document.querySelector(".asa").setAttribute("aria-label",s.asa);
-  document.getElementById("f-cuando").placeholder=s.ph;
-  document.querySelector("#visita img").alt=s.alt;
-  document.getElementById("barra").setAttribute("aria-label",s.barra);
+  $(".asa").setAttribute("aria-label",s.asa);
+  $("#f-cuando").placeholder=s.ph;
+  $("#costa img").alt=s.k_alt;
+  $(".mapa img").alt=s.m_alt;
+  $("#barra").setAttribute("aria-label",s.barra);
+  $(".cabecera nav").setAttribute("aria-label",s.nav);
   document.title=s.titulo;
-  document.querySelector('meta[name=description]').content=s.desc;
-  var b=document.getElementById("idioma");
+  $('meta[name=description]').content=s.desc;
+  var b=$("#idioma");
   b.textContent=lang==="es"?"English":"Español";
   b.setAttribute("aria-label",lang==="es"?"Switch to English":"Cambiar a español");
-  document.querySelectorAll("[data-wa]").forEach(function(a){
+  $$("[data-wa]").forEach(function(a){
     var k=a.dataset.wa;
     a.href=wa(k==="general"?MSG[lang].general:MSG[lang].serv+nombreServicio(k)+".");
   });
-  document.getElementById("e-coche").textContent="";
-  document.getElementById("f-coche").removeAttribute("aria-invalid");
+  $$('a[href^="aviso-legal.html"]').forEach(function(a){a.href="aviso-legal.html"+(lang==="en"?"?lang=en":"")});
+  $("#e-coche").textContent="";
+  $("#f-coche").removeAttribute("aria-invalid");
   pintarAhora();
 }
-document.getElementById("idioma").addEventListener("click",function(){lang=lang==="es"?"en":"es";aplicarIdioma()});
+$("#idioma").addEventListener("click",function(){
+  lang=lang==="es"?"en":"es";
+  try{localStorage.setItem("idioma",lang)}catch(e){}
+  aplicarIdioma();
+});
 
 /* ---------- Abierto ahora (hora de Jávea) ---------- */
 function pintarAhora(){
@@ -585,162 +774,208 @@ function pintarAhora(){
     p.forEach(function(x){if(x.type==="weekday")dia=x.value;if(x.type==="hour")hora=parseInt(x.value,10)});
     abierto=["Mon","Tue","Wed","Thu","Fri"].indexOf(dia)>=0&&hora>=9&&hora<14;
   }catch(e){}
-  var el=document.getElementById("ahora");
-  el.classList.toggle("abierto",abierto);
-  el.querySelector("span").textContent=MSG[lang][abierto?"abierto":"cerrado"];
+  $$(".ahora").forEach(function(el){
+    el.classList.toggle("abierto",abierto);
+    $("span",el).textContent=MSG[lang][abierto?"abierto":"cerrado"];
+  });
 }
 setInterval(pintarAhora,60000);
 
 /* ---------- Servicios: uno abierto cada vez ---------- */
-var filas=document.querySelectorAll(".servicios li");
+var filas=$$(".servicios li");
 filas.forEach(function(li){
-  li.querySelector("button").addEventListener("click",function(){
+  $("button",li).addEventListener("click",function(){
     var abrir=!li.classList.contains("abierto");
-    filas.forEach(function(o){o.classList.remove("abierto");o.querySelector("button").setAttribute("aria-expanded","false")});
+    filas.forEach(function(o){o.classList.remove("abierto");$("button",o).setAttribute("aria-expanded","false")});
     if(abrir){li.classList.add("abierto");this.setAttribute("aria-expanded","true")}
   });
 });
 
 /* ---------- Formulario → WhatsApp ---------- */
-var form=document.getElementById("form"),coche=document.getElementById("f-coche"),err=document.getElementById("e-coche");
+var form=$("#form"),coche=$("#f-coche"),err=$("#e-coche");
 form.addEventListener("submit",function(e){
   e.preventDefault();
   var v=coche.value.trim();
   if(v.length<2){err.textContent=MSG[lang].falta;coche.setAttribute("aria-invalid","true");coche.focus();return}
-  var m=MSG[lang],sel=document.getElementById("f-servicio"),cuando=document.getElementById("f-cuando").value.trim();
+  var m=MSG[lang],sel=$("#f-servicio"),cuando=$("#f-cuando").value.trim();
   var lineas=[m.general,m.coche+v,m.servicio+sel.options[sel.selectedIndex].textContent];
   if(cuando)lineas.push(m.cuando+cuando);
-  window.open(wa(lineas.join("\n")),"_blank","noopener");
+  var url=wa(lineas.join("\n")),w=window.open(url,"_blank");
+  if(w){try{w.opener=null}catch(x){}}else{window.location.href=url}
 });
 coche.addEventListener("input",function(){err.textContent="";coche.removeAttribute("aria-invalid")});
 
 /* ---------- Cabecera, barra del móvil y entradas al hacer scroll ---------- */
-var cab=document.getElementById("cabecera"),barra=document.getElementById("barra"),portada=document.querySelector(".portada"),yAntes=0;
+var cab=$("#cabecera"),barra=$("#barra"),portada=$(".portada"),yAntes=0;
 function alMover(){
-  var y=window.scrollY,alto=portada.offsetHeight;
+  var y=window.pageYOffset||0,alto=portada.offsetHeight;
   cab.classList.toggle("solida",y>30);
-  cab.classList.toggle("fuera",y>alto&&y>yAntes);
-  barra.classList.toggle("visible",y>alto*.55);
+  if(y>alto&&y>yAntes+2)cab.classList.add("fuera");
+  else if(y<yAntes-2||y<=alto)cab.classList.remove("fuera");
+  barra.classList.toggle("visible",y>alto*.5);
   yAntes=y;
 }
 window.addEventListener("scroll",alMover,{passive:true});
+
+var comp=$("#comparador");
 if("IntersectionObserver" in window&&!quieto){
-  var ojo=new IntersectionObserver(function(es){
-    es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("visto");ojo.unobserve(e.target)}});
-  },{rootMargin:"0px 0px -12% 0px"});
+  var una=function(sel,fn,margen){
+    var o=new IntersectionObserver(function(es){
+      es.forEach(function(e){if(e.isIntersecting){fn(e.target);o.unobserve(e.target)}});
+    },{rootMargin:margen||"0px 0px -12% 0px"});
+    $$(sel).forEach(function(n){o.observe(n)});
+  };
   /* El titular está recortado hasta que entra, así que se vigila su contenedor */
-  document.querySelectorAll("#visita .foto").forEach(function(n){ojo.observe(n)});
-  var titulos=new IntersectionObserver(function(es){
-    es.forEach(function(e){
-      if(!e.isIntersecting)return;
-      e.target.querySelectorAll(".entra").forEach(function(n){n.classList.add("visto")});titulos.unobserve(e.target);
-    });
-  },{rootMargin:"0px 0px -12% 0px"});
-  document.querySelectorAll(".entra").forEach(function(n){titulos.observe(n.parentNode)});
-  /* En móvil no hay hover: cada palabra de la costa se rellena al quedar centrada */
-  var centro=new IntersectionObserver(function(es){
-    es.forEach(function(e){e.target.classList.toggle("visto-movil",e.isIntersecting)});
-  },{threshold:.8});
-  if(window.matchMedia("(hover: none)").matches)document.querySelectorAll(".costa li").forEach(function(n){centro.observe(n)});
+  $$(".entra").forEach(function(n){n.parentNode.classList.add("con-titular")});
+  una(".con-titular",function(c){$$(".entra",c).forEach(function(n){n.classList.add("visto")})});
+  una(".mapa",function(n){n.classList.add("visto")});
+  una("#comparador",function(){demoComparador()},"0px 0px -35% 0px");
+  /* Sin ratón no hay hover: cada palabra de la costa se rellena al quedar a la vista */
+  if(window.matchMedia("(hover: none)").matches){
+    var centro=new IntersectionObserver(function(es){
+      es.forEach(function(e){e.target.classList.toggle("lleno",e.isIntersecting)});
+    },{threshold:.85});
+    $$(".costa li").forEach(function(n){centro.observe(n)});
+  }
 }else{
-  document.querySelectorAll(".entra,#visita .foto").forEach(function(n){n.classList.add("visto")});
+  $$(".entra,.mapa").forEach(function(n){n.classList.add("visto")});
 }
 
-/* ---------- Portada: luz de inspección sobre la pintura ---------- */
-var lienzo=portada.querySelector("canvas"),ctx=lienzo.getContext("2d");
-var asa=portada.querySelector(".asa");
-var W=0,H=0,corte=.5,luz={x:.5,y:.4},sigueRaton=false,pendiente=false,arrastrando=false;
-
-/* Los microarañazos se ven como arcos alrededor del reflejo de la lámpara: se generan una vez. */
-var arcos=[],semilla=7;
+/* ---------- Comparador: luz de inspección sobre la pintura ---------- */
+var lienzo=$("canvas",comp),ctx=lienzo.getContext("2d"),asa=$(".asa",comp);
+var W=0,H=0,corte=.5,luz={x:.5,y:.45},sigueRaton=false,arrastrando=false,pendiente=false,enDemo=false,toque=null;
+var semilla=7;
 function azar(){semilla=(semilla*16807)%2147483647;return semilla/2147483647}
-for(var i=0;i<520;i++){
-  arcos.push({r:14+Math.pow(azar(),.8)*430,a:azar()*Math.PI*2,l:.12+azar()*.6,g:.5+azar()*.7,o:.25+azar()*.75});
+/* Los microarañazos se ven como arcos alrededor del reflejo de la lámpara: se generan una vez. */
+var arcos=[];
+for(var i=0;i<620;i++){
+  arcos.push({r:12+Math.pow(azar(),.8)*440,a:azar()*Math.PI*2,l:.1+azar()*.62,g:.5+azar()*.8,o:.25+azar()*.75});
 }
+/* Partícula metálica de la pintura: una tesela de puntos que solo brilla cerca de la luz */
+var tesela=document.createElement("canvas");tesela.width=tesela.height=220;
+(function(){
+  var c=tesela.getContext("2d");
+  for(var k=0;k<1500;k++){
+    c.fillStyle="rgba(205,225,255,"+(.12+azar()*.55).toFixed(2)+")";
+    c.fillRect(Math.floor(azar()*220),Math.floor(azar()*220),1,1);
+  }
+})();
+var brillo=document.createElement("canvas"),bctx=brillo.getContext("2d"),patron=null;
+
 function medir(){
-  var d=Math.min(window.devicePixelRatio||1,2),c=portada.getBoundingClientRect();
+  var d=Math.min(window.devicePixelRatio||1,2),c=comp.getBoundingClientRect();
+  if(!c.width)return;
   W=c.width;H=c.height;lienzo.width=Math.round(W*d);lienzo.height=Math.round(H*d);
   ctx.setTransform(d,0,0,d,0,0);pedir();
 }
 function pedir(){if(!pendiente){pendiente=true;requestAnimationFrame(dibujar)}}
 function dibujar(){
   pendiente=false;
+  if(!W)return;
   var x=luz.x*W,y=luz.y*H,cx=corte*W,g;
-  var esc=Math.max(.62,Math.min(1,W/1100));
+  var esc=Math.max(.6,Math.min(1.25,W/1000));
   ctx.clearRect(0,0,W,H);
+
+  /* Partícula metálica alrededor de la luz, en los dos lados */
+  var R=Math.round(330*esc);
+  if(brillo.width!==R*2){brillo.width=brillo.height=R*2;patron=null}
+  if(!patron)patron=bctx.createPattern(tesela,"repeat");
+  bctx.globalCompositeOperation="source-over";bctx.clearRect(0,0,R*2,R*2);
+  bctx.fillStyle=patron;bctx.fillRect(0,0,R*2,R*2);
+  g=bctx.createRadialGradient(R,R,0,R,R,R);
+  g.addColorStop(0,"rgba(0,0,0,1)");g.addColorStop(.45,"rgba(0,0,0,.5)");g.addColorStop(1,"rgba(0,0,0,0)");
+  bctx.globalCompositeOperation="destination-in";bctx.fillStyle=g;bctx.fillRect(0,0,R*2,R*2);
+  ctx.drawImage(brillo,x-R,y-R);
 
   /* Corregida: reflejo limpio y definido */
   ctx.save();ctx.beginPath();ctx.rect(cx,0,W-cx,H);ctx.clip();
-  g=ctx.createRadialGradient(x,y,0,x,y,440*esc);
-  g.addColorStop(0,"rgba(236,244,255,.78)");g.addColorStop(.07,"rgba(214,230,255,.5)");
-  g.addColorStop(.11,"rgba(143,193,234,.2)");g.addColorStop(.45,"rgba(90,130,220,.07)");g.addColorStop(1,"rgba(90,130,220,0)");
+  g=ctx.createRadialGradient(x,y,0,x,y,460*esc);
+  g.addColorStop(0,"rgba(240,246,255,.92)");g.addColorStop(.055,"rgba(222,235,255,.62)");
+  g.addColorStop(.09,"rgba(143,193,234,.24)");g.addColorStop(.42,"rgba(90,130,220,.08)");g.addColorStop(1,"rgba(90,130,220,0)");
   ctx.fillStyle=g;ctx.fillRect(cx,0,W-cx,H);ctx.restore();
 
   /* Sin corregir: velo apagado y remolinos alrededor de la luz */
   ctx.save();ctx.beginPath();ctx.rect(0,0,cx,H);ctx.clip();
-  ctx.fillStyle="rgba(190,205,235,.035)";ctx.fillRect(0,0,cx,H);
-  g=ctx.createRadialGradient(x,y,0,x,y,520*esc);
-  g.addColorStop(0,"rgba(205,218,242,.36)");g.addColorStop(.3,"rgba(160,182,228,.15)");g.addColorStop(1,"rgba(160,182,228,0)");
+  ctx.fillStyle="rgba(190,205,235,.045)";ctx.fillRect(0,0,cx,H);
+  g=ctx.createRadialGradient(x,y,0,x,y,540*esc);
+  g.addColorStop(0,"rgba(205,218,242,.4)");g.addColorStop(.3,"rgba(160,182,228,.16)");g.addColorStop(1,"rgba(160,182,228,0)");
   ctx.fillStyle=g;ctx.fillRect(0,0,cx,H);
   ctx.lineCap="round";
   for(var i=0;i<arcos.length;i++){
-    var a=arcos[i],f=1-a.r/450;
-    ctx.strokeStyle="rgba(228,238,255,"+(.42*a.o*f*f).toFixed(3)+")";
+    var a=arcos[i],f=1-a.r/460;
+    ctx.strokeStyle="rgba(228,238,255,"+(.46*a.o*f*f).toFixed(3)+")";
     ctx.lineWidth=a.g;
     ctx.beginPath();ctx.arc(x,y,a.r*esc,a.a,a.a+a.l);ctx.stroke();
   }
   ctx.restore();
 }
-function reposoY(){return window.innerWidth<=900?.22:.42}
 function fijarCorte(v){
   corte=Math.max(.05,Math.min(.95,v));
-  portada.style.setProperty("--corte",(corte*100).toFixed(2)+"%");
+  comp.style.setProperty("--corte",(corte*100).toFixed(2)+"%");
   asa.setAttribute("aria-valuenow",Math.round(corte*100));
-  if(!sigueRaton)luz.x=corte;
+  $(".rotulo.antes",comp).style.opacity=corte<.24?0:1;
+  $(".rotulo.despues",comp).style.opacity=corte>.76?0:1;
+  if(!sigueRaton){luz.x=corte;luz.y=.45}
   pedir();
 }
-portada.addEventListener("pointermove",function(e){
+function posicion(e){var c=comp.getBoundingClientRect();return {x:(e.clientX-c.left)/c.width,y:(e.clientY-c.top)/c.height}}
+comp.addEventListener("pointerdown",function(e){
+  if(e.pointerType==="mouse"){
+    if(e.button!==0)return;
+    arrastrando=true;enDemo=false;sigueRaton=true;
+    var p=posicion(e);luz.x=p.x;luz.y=p.y;fijarCorte(p.x);
+  }else{
+    /* Con el dedo solo se arrastra si el gesto es horizontal (o si empieza en el tirador): el vertical es scroll */
+    toque={x:e.clientX,enAsa:asa.contains(e.target)};
+    if(toque.enAsa){arrastrando=true;enDemo=false}
+  }
+  try{comp.setPointerCapture(e.pointerId)}catch(x){}
+});
+comp.addEventListener("pointermove",function(e){
+  var p=posicion(e);
+  if(e.pointerType==="mouse"){
+    sigueRaton=true;enDemo=false;luz.x=p.x;luz.y=p.y;
+    if(arrastrando)fijarCorte(p.x);else pedir();
+    return;
+  }
+  if(toque&&!arrastrando&&Math.abs(e.clientX-toque.x)>8){arrastrando=true;enDemo=false}
+  if(arrastrando)fijarCorte(p.x);
+});
+function soltar(){arrastrando=false;toque=null}
+comp.addEventListener("pointerup",soltar);
+comp.addEventListener("pointercancel",soltar);
+comp.addEventListener("pointerleave",function(e){
   if(e.pointerType!=="mouse"||arrastrando)return;
-  var c=portada.getBoundingClientRect();
-  sigueRaton=true;luz.x=(e.clientX-c.left)/c.width;luz.y=(e.clientY-c.top)/c.height;pedir();
+  sigueRaton=false;luz.x=corte;luz.y=.45;pedir();
 });
-portada.addEventListener("pointerleave",function(e){
-  if(e.pointerType!=="mouse")return;
-  sigueRaton=false;luz.x=corte;luz.y=reposoY();pedir();
-});
-asa.addEventListener("pointerdown",function(e){arrastrando=true;sigueRaton=false;asa.setPointerCapture(e.pointerId);e.preventDefault()});
-asa.addEventListener("pointermove",function(e){
-  if(!arrastrando)return;
-  var c=portada.getBoundingClientRect();luz.y=reposoY();fijarCorte((e.clientX-c.left)/c.width);
-});
-function soltar(){arrastrando=false}
-asa.addEventListener("pointerup",soltar);asa.addEventListener("pointercancel",soltar);
 asa.addEventListener("keydown",function(e){
   var paso=e.key==="ArrowLeft"?-.04:e.key==="ArrowRight"?.04:e.key==="Home"?-1:e.key==="End"?1:0;
   if(!paso)return;
-  e.preventDefault();sigueRaton=false;luz.y=reposoY();fijarCorte(corte+paso);
+  e.preventDefault();sigueRaton=false;enDemo=false;fijarCorte(corte+paso);
 });
-
-/* Al cargar: la lámpara cruza la pintura de izquierda a derecha y vuelve al corte */
-function entrada(){
-  var t0=performance.now(),dur=2600;
+/* Al llegar al comparador, la línea se mueve sola una vez para enseñar que se puede arrastrar */
+function demoComparador(){
+  if(sigueRaton||arrastrando)return;
+  var t0=performance.now(),dur=2600;enDemo=true;
   (function paso(ahora){
-    if(sigueRaton||arrastrando)return;
+    if(!enDemo)return;
     var k=Math.min(1,(ahora-t0)/dur);
-    var ida=Math.min(1,k/.62),vuelta=Math.max(0,(k-.62)/.38);
-    var s1=1-Math.pow(1-ida,3),s2=vuelta*vuelta*(3-2*vuelta);
-    luz.x=-.1+(.95)*s1-(.85-corte)*s2;pedir();
-    if(k<1)requestAnimationFrame(paso);
+    fijarCorte(.5+.28*Math.sin(k*Math.PI*2)*(1-k*.3));
+    if(k<1)requestAnimationFrame(paso);else{enDemo=false;fijarCorte(.5)}
   })(t0);
 }
+
 window.addEventListener("resize",medir);
-luz.y=reposoY();
-if(/^en\b/i.test(navigator.language||""))lang="en";
+var guardado=null;
+try{guardado=localStorage.getItem("idioma")}catch(e){}
+if(guardado==="en"||guardado==="es")lang=guardado;
+else if(/^en\b/i.test(navigator.language||""))lang="en";
+if(/[?&]lang=en\b/.test(location.search))lang="en";
+if(/[?&]lang=es\b/.test(location.search))lang="es";
 aplicarIdioma();
 medir();alMover();
 if(document.fonts&&document.fonts.ready)document.fonts.ready.then(medir);
 requestAnimationFrame(function(){requestAnimationFrame(function(){document.documentElement.classList.add("lista")})});
-if(!quieto){luz.x=-.1;entrada()}
 })();
 </script>
 </body>
