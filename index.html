@@ -221,10 +221,14 @@ p{margin:0}
 .costa em{display:block;font-style:normal;font-weight:600;margin-top:8px}
 
 /* Jet ski */
-#jetski{position:relative;overflow:hidden;padding-bottom:calc(var(--seccion) + 90px)}
-#jetski .titulo{grid-column:1/8}
-#jetski .cuerpo{grid-column:8/13;align-self:end}
-#jetski .cuerpo p{max-width:30em;color:#E3EBF9}
+#jetski{position:relative;isolation:isolate;overflow:hidden;padding-top:calc(var(--seccion) + 20px);padding-bottom:calc(var(--seccion) + 110px)}
+#jetski .fondo{position:absolute;inset:0;z-index:-2}
+#jetski .fondo img{width:100%;height:100%;object-fit:cover;object-position:100% 50%}
+#jetski::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;
+  background:linear-gradient(90deg,rgba(10,18,48,.86) 0%,rgba(10,18,48,.62) 38%,rgba(10,18,48,0) 72%)}
+#jetski .titulo{max-width:min(100%,760px)}
+#jetski .cuerpo{margin-top:28px}
+#jetski .cuerpo p{max-width:30em;color:#fff}
 #jetski .boton{margin-top:28px}
 .olas{position:absolute;left:0;bottom:-2px;width:100%;height:120px;pointer-events:none}
 .olas svg{position:absolute;left:0;bottom:0;width:200%;height:100%;animation:ola 14s linear infinite;will-change:transform}
@@ -329,7 +333,8 @@ footer{background:var(--laca-2);color:var(--gris-claro);font-size:15px;overflow:
   .costa::-webkit-scrollbar{display:none}
   .costa li{flex:0 0 78%;scroll-snap-align:center;padding-bottom:0}
   .costa strong{font-size:60px}
-  #jetski{padding-bottom:calc(var(--seccion) + 70px)}
+  #jetski{padding-top:var(--seccion);padding-bottom:calc(var(--seccion) + 150px)}
+  #jetski::before{background:linear-gradient(180deg,rgba(10,18,48,.88) 0%,rgba(10,18,48,.7) 55%,rgba(10,18,48,.1) 100%)}
   .olas{height:80px}
   .mapa .lamina{aspect-ratio:1/1;--px:38.8%;--py:49.9%}
   .chincheta b{left:14px}
@@ -507,7 +512,12 @@ footer{background:var(--laca-2);color:var(--gris-claro);font-size:15px;overflow:
 </section>
 
 <section class="seccion oscura" id="jetski">
-  <div class="ancho rejilla">
+  <picture class="fondo">
+    <source media="(max-width:900px)" type="image/webp" srcset="img/mar-m-900.webp">
+    <source type="image/webp" srcset="img/mar-1400.webp 1400w, img/mar-2400.webp 2000w" sizes="100vw">
+    <img src="img/mar-1400.jpg" width="1400" height="788" loading="lazy" decoding="async" alt="">
+  </picture>
+  <div class="ancho">
     <div class="titulo">
       <h2 class="entra" data-t="j_h2">También cuidamos tu moto de agua</h2>
     </div>
